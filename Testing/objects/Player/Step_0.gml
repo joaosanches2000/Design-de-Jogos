@@ -2,28 +2,19 @@
 // You can write your code in this editor
 
 
-key_left = keyboard_check(vk_left);
-key_right = keyboard_check(vk_right);
-key_up = keyboard_check(vk_up);
-key_down = keyboard_check(vk_down);
+keyLeft = keyboard_check(vk_left);
+keyRight = keyboard_check(vk_right);
+keyUp = keyboard_check(vk_up);
+keyDown = keyboard_check(vk_down);
 
-var moveH = key_right - key_left;
-var moveV = key_down - key_up;
 
-horizontalSpeed = moveH * walkSpeed;
-verticalSpeed = moveV * walkSpeed;
+inputDirection = point_direction(0,0,keyRight - keyLeft, keyDown - keyUp);
+inputMagnitude = (keyRight - keyLeft != 0) || (keyDown - keyUp != 0)
 
-x = x + horizontalSpeed;
-y = y + verticalSpeed;
+//var moveH = key_right - key_left;
+//var moveV = key_down - key_up;
 
-if(horizontalSpeed > 0) //move right
-	sprite_index = sRightWalk;
+hSpeed = lengthdir_x(inputMagnitude + walkSpeed, inputDirection);
+vSpeed = lengthdir_y(inputMagnitude + walkSpeed, inputDirection);
 
-if(horizontalSpeed < 0) //move left
-	sprite_index = sLeftWalk;
-	
-if(verticalSpeed > 0) //move up
-	sprite_index = sDownWalk;
-	
-if(verticalSpeed < 0) //move down
-	sprite_index = sUpWalk;
+script_execute(state);
