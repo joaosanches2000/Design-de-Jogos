@@ -7,6 +7,7 @@
     {"id":{"name":"sUpWalk","path":"sprites/sUpWalk/sUpWalk.yy",},"order":2,},
     {"id":{"name":"Walls","path":"objects/Walls/Walls.yy",},"order":1,},
     {"id":{"name":"Sprite11","path":"sprites/Sprite11/Sprite11.yy",},"order":15,},
+    {"id":{"name":"Object4","path":"objects/Object4/Object4.yy",},"order":3,},
     {"id":{"name":"sLeftWalk","path":"sprites/sLeftWalk/sLeftWalk.yy",},"order":8,},
     {"id":{"name":"sPlayer","path":"sprites/sPlayer/sPlayer.yy",},"order":0,},
     {"id":{"name":"sDownWalk","path":"sprites/sDownWalk/sDownWalk.yy",},"order":9,},
