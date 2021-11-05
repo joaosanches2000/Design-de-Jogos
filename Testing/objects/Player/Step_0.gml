@@ -11,10 +11,8 @@ keyDown = keyboard_check(vk_down);
 inputDirection = point_direction(0,0,keyRight - keyLeft, keyDown - keyUp);
 inputMagnitude = (keyRight - keyLeft != 0) || (keyDown - keyUp != 0)
 
-//var moveH = key_right - key_left;
-//var moveV = key_down - key_up;
 
-hSpeed = lengthdir_x(inputMagnitude + walkSpeed, inputDirection);
-vSpeed = lengthdir_y(inputMagnitude + walkSpeed, inputDirection);
+hSpeed = lengthdir_x(inputMagnitude * walkSpeed, inputDirection);
+vSpeed = lengthdir_y(inputMagnitude * walkSpeed, inputDirection);
 
 script_execute(state);
