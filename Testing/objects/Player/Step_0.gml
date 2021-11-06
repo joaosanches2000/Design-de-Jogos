@@ -15,4 +15,5 @@ inputMagnitude = (keyRight - keyLeft != 0) || (keyDown - keyUp != 0)
 hSpeed = lengthdir_x(inputMagnitude * walkSpeed, inputDirection);
 vSpeed = lengthdir_y(inputMagnitude * walkSpeed, inputDirection);
 
-script_execute(state);
+if(!global.gamePaused)
+	script_execute(state);

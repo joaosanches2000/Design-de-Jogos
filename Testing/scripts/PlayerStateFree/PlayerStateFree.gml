@@ -14,14 +14,22 @@ function PlayerStateFree(){
 	
 	if(vSpeed < 0) //move down
 		sprite_index = sUpWalk;
+		
 
+	if(keyboard_check_pressed(vk_shift))
+	{
+		state = PlayerStateAttack;	
+		stateAttack = AttackSlash;
+	}
 
 
 	//Change state
 	if(keyboard_check_pressed(vk_space))
 	{
-		state = PlayerStateDodge;
-		moveDistanceRemaining = distanceDodge;
+		//state = PlayerStateDodge;
+		//moveDistanceRemaining = distanceDodge;
+		
+		
 	}
 
 }
