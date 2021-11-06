@@ -15,4 +15,3 @@ distanceDodge = 52;
 slashCountdown = 12;
 
 grv = 0.1;
-

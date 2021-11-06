@@ -1,6 +1,6 @@
 {
   "compression": 1,
-  "volume": 1.0,
+  "volume": 0.44,
   "preload": false,
   "bitRate": 128,
   "sampleRate": 44100,
@@ -11,7 +11,7 @@
     "path": "audiogroups/audiogroup1",
   },
   "soundFile": "Running_Road.mp3",
-  "duration": 45.144,
+  "duration": 0.653061,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",

@@ -8,14 +8,14 @@
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
   "bbox_left": 0,
-  "bbox_right": 459,
+  "bbox_right": 639,
   "bbox_top": 0,
-  "bbox_bottom": 173,
+  "bbox_bottom": 639,
   "HTile": false,
   "VTile": false,
   "For3D": false,
-  "width": 460,
-  "height": 174,
+  "width": 640,
+  "height": 640,
   "textureGroupId": {
     "name": "Default",
     "path": "texturegroups/Default",
@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"653ce314-9207-4be6-9487-3e7f088f55b4","path":"sprites/Sprite16/Sprite16.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"653ce314-9207-4be6-9487-3e7f088f55b4","path":"sprites/Sprite16/Sprite16.yy",},"LayerId":{"name":"d573acc5-0dc8-4fcf-abe9-a097d5d5d716","path":"sprites/Sprite16/Sprite16.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"Sprite16","path":"sprites/Sprite16/Sprite16.yy",},"resourceVersion":"1.0","name":"653ce314-9207-4be6-9487-3e7f088f55b4","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"a87d9c1e-3793-45ad-901a-fa3b9c01e565","path":"sprites/Greek_elements/Greek_elements.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"a87d9c1e-3793-45ad-901a-fa3b9c01e565","path":"sprites/Greek_elements/Greek_elements.yy",},"LayerId":{"name":"608f920f-17f7-4375-afdb-29c3657a4a10","path":"sprites/Greek_elements/Greek_elements.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"Greek_elements","path":"sprites/Greek_elements/Greek_elements.yy",},"resourceVersion":"1.0","name":"a87d9c1e-3793-45ad-901a-fa3b9c01e565","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"Sprite16","path":"sprites/Sprite16/Sprite16.yy",},
+    "spriteId": {"name":"Greek_elements","path":"sprites/Greek_elements/Greek_elements.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"d02edcc1-a4a3-4c22-8e48-5bb6a7b83467","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"653ce314-9207-4be6-9487-3e7f088f55b4","path":"sprites/Sprite16/Sprite16.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"4e8ba909-2a71-49dc-93b2-79b852f58d2a","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"a87d9c1e-3793-45ad-901a-fa3b9c01e565","path":"sprites/Greek_elements/Greek_elements.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
@@ -58,14 +58,14 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"Sprite16","path":"sprites/Sprite16/Sprite16.yy",},
+    "parent": {"name":"Greek_elements","path":"sprites/Greek_elements/Greek_elements.yy",},
     "resourceVersion": "1.3",
-    "name": "Sprite16",
+    "name": "Greek_elements",
     "tags": [],
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"d573acc5-0dc8-4fcf-abe9-a097d5d5d716","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"608f920f-17f7-4375-afdb-29c3657a4a10","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {
@@ -73,7 +73,7 @@
     "path": "folders/Sprites/Ground.yy",
   },
   "resourceVersion": "1.0",
-  "name": "Sprite16",
+  "name": "Greek_elements",
   "tags": [],
   "resourceType": "GMSprite",
 }
