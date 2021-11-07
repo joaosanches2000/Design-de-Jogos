@@ -9,15 +9,8 @@
     {"id":{"name":"sCollision","path":"sprites/sCollision/sCollision.yy",},"order":1,},
     {"id":{"name":"sUpWalk","path":"sprites/sUpWalk/sUpWalk.yy",},"order":4,},
     {"id":{"name":"PlayerStateDodge","path":"scripts/PlayerStateDodge/PlayerStateDodge.yy",},"order":3,},
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-    {"id":{"name":"Sprite11","path":"sprites/Sprite11/Sprite11.yy",},"order":13,},
-=======
     {"id":{"name":"Sprite11","path":"sprites/Sprite11/Sprite11.yy",},"order":7,},
->>>>>>> 700222fe03b0c9f5c00cad032fbf0c28b76188f1
     {"id":{"name":"Sprite12","path":"sprites/Sprite12/Sprite12.yy",},"order":0,},
->>>>>>> 00f710fb43a196a137a8e7d0abc91562433612f0
     {"id":{"name":"GameLogic","path":"objects/GameLogic/GameLogic.yy",},"order":0,},
     {"id":{"name":"Water","path":"tilesets/Water/Water.yy",},"order":2,},
     {"id":{"name":"sLeftWalk","path":"sprites/sLeftWalk/sLeftWalk.yy",},"order":1,},
@@ -35,13 +28,9 @@
     {"id":{"name":"Water_samples","path":"sprites/Water_samples/Water_samples.yy",},"order":4,},
     {"id":{"name":"Cliff_samples","path":"sprites/Cliff_samples/Cliff_samples.yy",},"order":5,},
     {"id":{"name":"MACROS","path":"scripts/MACROS/MACROS.yy",},"order":0,},
-<<<<<<< HEAD
     {"id":{"name":"sWhiteFlash","path":"shaders/sWhiteFlash/sWhiteFlash.yy",},"order":0,},
-    {"id":{"name":"sPlayer","path":"sprites/sPlayer/sPlayer.yy",},"order":0,},
-=======
     {"id":{"name":"sPlayer","path":"sprites/sPlayer/sPlayer.yy",},"order":2,},
     {"id":{"name":"Test_Audio","path":"sounds/Test_Audio/Test_Audio.yy",},"order":0,},
->>>>>>> 00f710fb43a196a137a8e7d0abc91562433612f0
     {"id":{"name":"Entity","path":"objects/Entity/Entity.yy",},"order":1,},
     {"id":{"name":"Ground_stairs_samples","path":"sprites/Ground_stairs_samples/Ground_stairs_samples.yy",},"order":6,},
     {"id":{"name":"sDownWalk","path":"sprites/sDownWalk/sDownWalk.yy",},"order":0,},
@@ -56,11 +45,7 @@
     {"id":{"name":"sRightWalk","path":"sprites/sRightWalk/sRightWalk.yy",},"order":3,},
     {"id":{"name":"Sample_1","path":"tilesets/Sample_1/Sample_1.yy",},"order":3,},
     {"id":{"name":"Enemy","path":"objects/Enemy/Enemy.yy",},"order":2,},
-<<<<<<< HEAD
     {"id":{"name":"EntityHitDestroy","path":"scripts/EntityHitDestroy/EntityHitDestroy.yy",},"order":7,},
-=======
-    {"id":{"name":"Sprite13","path":"sprites/Sprite13/Sprite13.yy",},"order":1,},
->>>>>>> 00f710fb43a196a137a8e7d0abc91562433612f0
     {"id":{"name":"PlayerStateAttack","path":"scripts/PlayerStateAttack/PlayerStateAttack.yy",},"order":4,},
     {"id":{"name":"Player","path":"objects/Player/Player.yy",},"order":0,},
     {"id":{"name":"Sprite20","path":"sprites/Sprite20/Sprite20.yy",},"order":6,},

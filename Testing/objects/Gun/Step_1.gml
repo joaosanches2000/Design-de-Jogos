@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 x = Player.x + 3;
-y = Player.y + 4;
+y = Player.y - 4;
 
 image_angle = point_direction(x,y,mouse_x,mouse_y);
 firing_delay = firing_delay-1;
