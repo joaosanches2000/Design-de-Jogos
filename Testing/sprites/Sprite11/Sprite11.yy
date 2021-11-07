@@ -68,10 +68,6 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"7220b325-4099-4273-88eb-5cda4572efa9","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
-  "parent": {
-    "name": "Testing",
-    "path": "Testing.yyp",
-  },
   "resourceVersion": "1.0",
   "name": "Sprite11",
   "tags": [],
