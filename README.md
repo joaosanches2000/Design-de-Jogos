@@ -1,5 +1,10 @@
 # Design-de-Jogos
 
-LOLITOS
+<h3>Greek Tragedy</h3>
 
-Jogo  mt fixe lmao
+Protótipo para Design de Jogos 21/22
+
+
+
+
+Jogo  mt fixe 

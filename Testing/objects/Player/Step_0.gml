@@ -17,3 +17,4 @@ vSpeed = lengthdir_y(inputMagnitude * walkSpeed, inputDirection);
 
 if(!global.gamePaused)
 	script_execute(state);
+	
