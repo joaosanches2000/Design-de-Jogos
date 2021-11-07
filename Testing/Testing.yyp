@@ -1,24 +1,30 @@
 {
   "resources": [
+    {"id":{"name":"Gun","path":"objects/Gun/Gun.yy",},"order":8,},
     {"id":{"name":"PlayerCollision","path":"scripts/PlayerCollision/PlayerCollision.yy",},"order":1,},
     {"id":{"name":"Sprite14","path":"sprites/Sprite14/Sprite14.yy",},"order":2,},
     {"id":{"name":"Sprite15","path":"sprites/Sprite15/Sprite15.yy",},"order":3,},
     {"id":{"name":"Sprite_broadcast","path":"scripts/Sprite_broadcast/Sprite_broadcast.yy",},"order":7,},
     {"id":{"name":"Running_Road","path":"sounds/Running_Road/Running_Road.yy",},"order":1,},
-    {"id":{"name":"sCollision","path":"sprites/sCollision/sCollision.yy",},"order":11,},
+    {"id":{"name":"sCollision","path":"sprites/sCollision/sCollision.yy",},"order":1,},
     {"id":{"name":"sUpWalk","path":"sprites/sUpWalk/sUpWalk.yy",},"order":4,},
     {"id":{"name":"PlayerStateDodge","path":"scripts/PlayerStateDodge/PlayerStateDodge.yy",},"order":3,},
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     {"id":{"name":"Sprite11","path":"sprites/Sprite11/Sprite11.yy",},"order":13,},
+=======
+    {"id":{"name":"Sprite11","path":"sprites/Sprite11/Sprite11.yy",},"order":7,},
+>>>>>>> 700222fe03b0c9f5c00cad032fbf0c28b76188f1
     {"id":{"name":"Sprite12","path":"sprites/Sprite12/Sprite12.yy",},"order":0,},
 >>>>>>> 00f710fb43a196a137a8e7d0abc91562433612f0
     {"id":{"name":"GameLogic","path":"objects/GameLogic/GameLogic.yy",},"order":0,},
     {"id":{"name":"Water","path":"tilesets/Water/Water.yy",},"order":2,},
     {"id":{"name":"sLeftWalk","path":"sprites/sLeftWalk/sLeftWalk.yy",},"order":1,},
-    {"id":{"name":"sPlayerAttackSlashCol","path":"sprites/sPlayerAttackSlashCol/sPlayerAttackSlashCol.yy",},"order":13,},
+    {"id":{"name":"Bullet","path":"objects/Bullet/Bullet.yy",},"order":7,},
+    {"id":{"name":"sPlayerAttackSlashCol","path":"sprites/sPlayerAttackSlashCol/sPlayerAttackSlashCol.yy",},"order":3,},
     {"id":{"name":"CalculateAttack","path":"scripts/CalculateAttack/CalculateAttack.yy",},"order":6,},
-    {"id":{"name":"sPlayerAttackSlash","path":"sprites/sPlayerAttackSlash/sPlayerAttackSlash.yy",},"order":12,},
+    {"id":{"name":"sPlayerAttackSlash","path":"sprites/sPlayerAttackSlash/sPlayerAttackSlash.yy",},"order":2,},
     {"id":{"name":"rRoom1","path":"rooms/rRoom1/rRoom1.yy",},"order":3,},
     {"id":{"name":"AttackSlash","path":"scripts/AttackSlash/AttackSlash.yy",},"order":5,},
     {"id":{"name":"oSound","path":"objects/oSound/oSound.yy",},"order":6,},
@@ -39,7 +45,7 @@
     {"id":{"name":"Entity","path":"objects/Entity/Entity.yy",},"order":1,},
     {"id":{"name":"Ground_stairs_samples","path":"sprites/Ground_stairs_samples/Ground_stairs_samples.yy",},"order":6,},
     {"id":{"name":"sDownWalk","path":"sprites/sDownWalk/sDownWalk.yy",},"order":0,},
-    {"id":{"name":"sMinotaur","path":"sprites/sMinotaur/sMinotaur.yy",},"order":10,},
+    {"id":{"name":"sMinotaur","path":"sprites/sMinotaur/sMinotaur.yy",},"order":0,},
     {"id":{"name":"Greek_elements","path":"sprites/Greek_elements/Greek_elements.yy",},"order":8,},
     {"id":{"name":"tCollision","path":"tilesets/tCollision/tCollision.yy",},"order":0,},
     {"id":{"name":"EntityHitSolid","path":"scripts/EntityHitSolid/EntityHitSolid.yy",},"order":9,},
@@ -57,6 +63,7 @@
 >>>>>>> 00f710fb43a196a137a8e7d0abc91562433612f0
     {"id":{"name":"PlayerStateAttack","path":"scripts/PlayerStateAttack/PlayerStateAttack.yy",},"order":4,},
     {"id":{"name":"Player","path":"objects/Player/Player.yy",},"order":0,},
+    {"id":{"name":"Sprite20","path":"sprites/Sprite20/Sprite20.yy",},"order":6,},
     {"id":{"name":"rInit","path":"rooms/rInit/rInit.yy",},"order":0,},
   ],
   "Options": [
@@ -93,8 +100,8 @@
     {"folderPath":"folders/Extensions.yy","order":12,"resourceVersion":"1.0","name":"Extensions","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Objects/Managers.yy","order":5,"resourceVersion":"1.0","name":"Managers","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Rooms/Parent-Child.yy","order":1,"resourceVersion":"1.0","name":"Parent-Child","tags":[],"resourceType":"GMFolder",},
-    {"folderPath":"folders/Sprites/player.yy","order":15,"resourceVersion":"1.0","name":"player","tags":[],"resourceType":"GMFolder",},
-    {"folderPath":"folders/Sprites/Ground.yy","order":16,"resourceVersion":"1.0","name":"Ground","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Sprites/player.yy","order":4,"resourceVersion":"1.0","name":"player","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Sprites/Ground.yy","order":5,"resourceVersion":"1.0","name":"Ground","tags":[],"resourceType":"GMFolder",},
   ],
   "AudioGroups": [
     {"targets":-1,"resourceVersion":"1.3","name":"audiogroup_default","resourceType":"GMAudioGroup",},
@@ -106,7 +113,7 @@
   ],
   "IncludedFiles": [],
   "MetaData": {
-    "IDEVersion": "2.3.6.595",
+    "IDEVersion": "2.3.5.589",
   },
   "resourceVersion": "1.4",
   "name": "Testing",
