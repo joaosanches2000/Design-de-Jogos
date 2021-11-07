@@ -1,5 +1,4 @@
-/// @description Global Variables
-// You can write your code in this editor
+// @description Global Variables
 state = PlayerStateFree;
 stateAttack = AttackSlash;
 hitByAttack = -1;
