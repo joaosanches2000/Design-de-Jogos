@@ -20,7 +20,7 @@
   "tile_count": 9,
   "autoTileSets": [],
   "tileAnimationFrames": [],
-  "tileAnimationSpeed": 15.0,
+  "tileAnimationSpeed": 8.0,
   "tileAnimation": {
     "FrameData": [
       0,

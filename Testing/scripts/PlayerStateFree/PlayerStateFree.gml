@@ -15,6 +15,9 @@ function PlayerStateFree(){
 	if(vSpeed < 0) //move down
 		sprite_index = sUpWalk;
 		
+	if(vSpeed=0 and hSpeed=0)
+		sprite_index = sPlayer;
+		
 
 	if(keyboard_check_pressed(vk_shift))
 	{
