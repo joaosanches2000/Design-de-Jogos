@@ -1,10 +1,15 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function AttackSlash(){
-	if(sprite_index != sPlayerAttackSlash) 
+	if(sprite_index != s360Slash) 
 	{
 		//Animation set-up
-		sprite_index = sPlayerAttackSlash;
+		sprite_index = s360Slash;
+
+		//if ((image_index) <= (image_number)){
+		//	sprite_index = sPlayer;
+		//}
+		
 		localFrame = 0;
 		image_index = 0;
 		
