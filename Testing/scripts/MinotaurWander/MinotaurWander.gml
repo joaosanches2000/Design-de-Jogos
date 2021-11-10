@@ -1,7 +1,7 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function MinotaurWander(){
-	//TODO: sprite_index = 
+	sprite_index = sMinotaurWalk;
 	
 	//At destination or give up?
 	if(x == xTo && y == yTo || (timePassed > enemyWanderDistance / enemySpeed))
@@ -40,4 +40,18 @@ function MinotaurWander(){
 				
 		EnemyTileCollision();
 	}	
+	
+	
+	
+
+	//Check for Agroo
+	if(++aggroCheck >= aggroCheckDuration)
+	{
+		aggroCheck = 0;
+		if(instance_exists(Player) && point_distance(x,y,Player.x,Player.y) <= enemyAggroRadius)
+		{
+			state = ENEMYSTATE.CHASE;
+			target = Player;
+		}
+	}
 }

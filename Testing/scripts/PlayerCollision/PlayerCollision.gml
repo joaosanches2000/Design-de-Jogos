@@ -25,8 +25,12 @@ function PlayerCollision() {
 		var _entityCheck  = _entityList[| 0];
 		if(_entityCheck.entityCollision == true)
 		{
-			if(sign(hSpeed) == -1) _snapX = _entityCheck.bbox_right+1;
-			else  _snapX = _entityCheck.bbox_left -1;
+			if(sign(hSpeed) == -1)
+				_snapX = _entityCheck.bbox_right+1;
+			else
+				_snapX = _entityCheck.bbox_left -1;
+			 //in case entity crashes into player
+		
 			x = _snapX;
 			hSpeed = 0;
 			_collision = true;

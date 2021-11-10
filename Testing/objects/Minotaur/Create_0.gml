@@ -12,3 +12,7 @@ state = ENEMYSTATE.WANDER;
 
 //Enemy Scripts
 enemyScript[ENEMYSTATE.WANDER] = MinotaurWander;
+enemyScript[ENEMYSTATE.CHASE] = MinotaurChase;
+enemyScript[ENEMYSTATE.ATTACK] = MinotaurAttack;
+enemyScript[ENEMYSTATE.HURT] = MinotaurHurt;
+enemyScript[ENEMYSTATE.DIE] = MinotaurDie;
