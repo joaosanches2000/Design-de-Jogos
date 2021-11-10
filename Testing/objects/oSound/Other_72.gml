@@ -1,5 +1,3 @@
-show_debug_message("BOO 1");
-
 audio_play_sound(Test_Audio,1,true);
 
 

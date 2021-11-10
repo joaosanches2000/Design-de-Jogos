@@ -6,13 +6,13 @@ menu_x+=(menu_x_target-menu_x)/menu_speed;
 
 //keyboard controls
 if (menu_control){
-	if (keyboard_check_pressed(vk_up)){
+	if (keyboard_check_pressed(vk_up) || keyboard_check_pressed(ord("W"))){
 		show_debug_message("UP");
 		menu_cursor++;
 		if (menu_cursor>=menu_item) menu_cursor=0;
 	}
 	
-	if (keyboard_check_pressed(vk_down)){
+	if (keyboard_check_pressed(vk_down) || keyboard_check_pressed(ord("S"))){
 		show_debug_message("down");
 		menu_cursor--;
 		if (menu_cursor<0) menu_cursor=menu_item-1;
