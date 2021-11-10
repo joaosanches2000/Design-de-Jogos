@@ -44,7 +44,7 @@
     "volume": 1.0,
     "length": 3.0,
     "events": {"Keyframes":[
-        {"id":"64c66ef9-0eea-4e9b-95d5-306a558b292d","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Events":[
+        {"id":"b7e8c113-f6d2-434f-b7f9-0815b3a191d6","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Events":[
                 "footstep",
               ],"resourceVersion":"1.0","resourceType":"MessageEventKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<MessageEventKeyframe>",},
       ],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},

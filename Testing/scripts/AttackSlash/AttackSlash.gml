@@ -2,13 +2,10 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function AttackSlash(){
 	if(sprite_index != s360Slash) 
+	
 	{
 		//Animation set-up
 		sprite_index = s360Slash;
-
-		//if ((image_index) <= (image_number)){
-		//	sprite_index = sPlayer;
-		//}
 		
 		localFrame = 0;
 		image_index = 0;
@@ -18,7 +15,10 @@ function AttackSlash(){
 			hitByAttack = ds_list_create();
 		ds_list_clear(hitByAttack);
 		
+		
 	}
+	
+	
 	
 	CalculateAttack(sPlayerAttackSlashCol);
 	//TODO: Animate Sprite Script
