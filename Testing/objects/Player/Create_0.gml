@@ -15,5 +15,7 @@ slashCountdown = 12;
 
 grv = 0.1;
 
+animationEndScript = -1;
+
 
 audio_group_load(audiogroup1); // sound effects

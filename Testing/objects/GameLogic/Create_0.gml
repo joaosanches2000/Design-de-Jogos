@@ -3,6 +3,7 @@
 randomize(); // changes the seed of the game
 
 global.gamePaused = false;
+global.iLifted = noone;
 
 room_goto(ROOM_START);
 
