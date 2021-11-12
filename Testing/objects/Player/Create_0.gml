@@ -1,5 +1,6 @@
 // @description Global Variables
 state = PlayerStateFree;
+lastState = state;
 stateAttack = AttackSlash;
 hitByAttack = -1;
 collisionMap = layer_tilemap_get_id(layer_get_id("Collision"));
@@ -17,5 +18,3 @@ grv = 0.1;
 
 animationEndScript = -1;
 
-
-audio_group_load(audiogroup1); // sound effects

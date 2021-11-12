@@ -6,6 +6,8 @@
 #macro CARDINAL_DIR round(direction/99)
 #macro ROOM_START rTitleScreen
 
+
+
 #macro RESOLUTION_W 800
 #macro RESOLUTION_H 450
 
