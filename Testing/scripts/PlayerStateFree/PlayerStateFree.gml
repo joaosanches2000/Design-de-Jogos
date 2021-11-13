@@ -1,8 +1,46 @@
 function PlayerStateFree(){
+	
+	hSpeed = lengthdir_x(inputMagnitude * walkSpeed, inputDirection);
+	vSpeed = lengthdir_y(inputMagnitude * walkSpeed, inputDirection);
 
-
+	
 	PlayerCollision(); //script that handles player collision and movement
+	
+	
+	//Update Sprite Index
+	var _oldSprite = sprite_index;
+	if (inputMagnitude != 0){
+		show_debug_message("estou aqui");
+		direction = inputDirection;
+		sprite_index = spriteRun;
+	} else sprite_index = spriteIdle;
 
+	if(_oldSprite != sprite_index) localFrame=0;
+
+	//Update Image Index
+	PlayerAnimateSprite();
+
+	if(keyAttack)
+	{
+		state = PlayerStateAttack;	
+		stateAttack = AttackSlash;
+	}	
+	
+	if(keySpecialAttack)
+	{
+		state = PlayerStateAttack;	
+		stateAttack = Attack360Slash;
+	}	
+	
+	
+
+
+	if(keyDodge)
+	{
+		state = PlayerStateDodge;
+		moveDistanceRemaining = distanceDodge;
+		
+	}
 
 /*	if(hSpeed > 0) //move right
 		sprite_index = sRightWalk;
@@ -16,11 +54,11 @@ function PlayerStateFree(){
 	if(vSpeed < 0) //move up
 		sprite_index = sUpWalk;*/
 		
-	
+	/*
 
 	if(vSpeed=0 and hSpeed=0){
 			switch (keyboard_lastkey){
-				/*case vk_down:
+				case vk_down:
 					sprite_index = sPlayer;
 					show_debug_message("vk_down");
 					break;
@@ -35,7 +73,7 @@ function PlayerStateFree(){
 				case vk_right:
 					sprite_index = sRightStand;
 					show_debug_message("vk_right");
-					break;*/
+					break;
 				case vk_shift:
 					if (image_speed > 0) {
 						if (image_index > image_number - 1){
@@ -46,29 +84,10 @@ function PlayerStateFree(){
 					break;
 			}
 	}
-	
-	if(keyboard_check_pressed(vk_shift)){
-		state = PlayerStateAttack;	
-		stateAttack = AttackSlash;
-	}
-		
 
+*/
+	//keyboard_check - With this function you can check to see
+	//if a key is held down or no
 
-
-	
-	
-
-	
-	//keyboard_check - With this function you can check to see if a key is held down or no
-
-
-
-	//Change state
-	if(keyboard_check_pressed(vk_space))
-	{
-		state = PlayerStateDodge;
-		moveDistanceRemaining = distanceDodge;
-		
-	}
 
 }

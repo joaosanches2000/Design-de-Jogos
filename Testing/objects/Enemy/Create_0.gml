@@ -25,7 +25,7 @@ stateWaitDuration = 0;
 
 //Enemy Wander
 timePassed = 0;//in case there is wall in the way
-waitDuration = 60; //frames
+waitDuration = 60; // in frames
 wait = 0;
 
 

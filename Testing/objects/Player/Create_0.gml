@@ -15,6 +15,8 @@ vSpeed=0;
 localFrame=0;
 spriteIdle=sPlayer;
 spriteRun=sPlayerRun;
+spriteAttack = sPlayerAttackSlash;
+sprite360Attack = s360Slash;
 
 dodgeSpeed = 6;
 distanceDodge = 52;
