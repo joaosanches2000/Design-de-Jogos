@@ -8,6 +8,10 @@ state = ENEMYSTATE.WANDER;
 
 
 //TODO: Enemy Sprites
+sprDie = sMinotaurDeath;
+sprWalk = sMinotaurWalk;
+sprAttack = sMinotaurAttack;
+//sprHurt
 //
 
 //Enemy Scripts

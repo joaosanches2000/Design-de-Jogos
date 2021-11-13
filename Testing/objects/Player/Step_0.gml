@@ -32,20 +32,3 @@ PlayerAnimateSprite();
 if(!global.gamePaused)
 	script_execute(state);
 	
-/*
-	
-//animation
-var _oldSprite = sprite_index;
-if(inputMagnitude != 0)
-{
-	direction = inputDirection; //will probably break
-	sprite_index = spriteWalk;
-
-}
-else 
-	sprite_index = spriteIdle;
-if(_oldSprite != sprite_index)
-	localFrame = 0;
-	
-PlayerAnimationSprite();
-*/
