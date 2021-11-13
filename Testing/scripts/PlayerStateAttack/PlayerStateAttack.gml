@@ -76,33 +76,32 @@ function HurtEnemy(_enemy,_damage,_source, _knockback)
 
 function Attack360Slash(){
 	if(sprite_index != s360Slash || sprite_index != sPlayerAttackSlash) 
-	
 	{
 		//Animation set-up
 		sprite_index = s360Slash;
 		
-		localFrame = 0;
 		image_index = 0;
 		
+		
+		PlayerPlayAnimation();
+		
+		if(animationEnd)
+		{
+			state = PlayerStateFree;			
+			animationEnd = false;
+		
+		}
+		
 		//Clear hit list
-		if(!ds_exists(hitByAttack,ds_type_list))
+		/*if(!ds_exists(hitByAttack,ds_type_list))
 			hitByAttack = ds_list_create();
 		ds_list_clear(hitByAttack);
-		
-		
+		*/
+		show_debug_message("asdwasdbw")
 	}
 	
-	
-	
-	CalculateAttack(sPlayerAttackSlashCol);
-	//TODO: Animate Sprite Script
-	slashCountdown--;
-	
-	if(slashCountdown == 0)
-	{
-		state = PlayerStateFree;
-		slashCountdown = 12;
-	}
+
+	//CalculateAttack(sPlayerAttackSlashCol);
 
 }
 
@@ -112,8 +111,10 @@ function AttackSlash(){
 		//Animation set-up
 		sprite_index = sPlayerAttackSlash;
 		
-		localFrame = 0;
+		//localFrame = 0;
 		image_index = 0;
+		
+		show_debug_message("kuyfyfuguy")
 		
 		PlayerAnimateSprite();
 		
@@ -122,8 +123,7 @@ function AttackSlash(){
 		
 		if(animationEnd)
 		{
-			state = PlayerStateFree;
-			
+			state = PlayerStateFree;			
 			animationEnd = false;
 		}
 		/*//Clear hit list
