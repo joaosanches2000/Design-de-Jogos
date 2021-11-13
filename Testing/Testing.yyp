@@ -36,6 +36,7 @@
     {"id":{"name":"CalculateAttack","path":"scripts/CalculateAttack/CalculateAttack.yy",},"order":6,},
     {"id":{"name":"PlayerAnimateSprite","path":"scripts/PlayerAnimateSprite/PlayerAnimateSprite.yy",},"order":1,},
     {"id":{"name":"sTextBox","path":"sprites/sTextBox/sTextBox.yy",},"order":12,},
+    {"id":{"name":"sPlayerRun","path":"sprites/sPlayerRun/sPlayerRun.yy",},"order":15,},
     {"id":{"name":"sPlayerAttackSlash","path":"sprites/sPlayerAttackSlash/sPlayerAttackSlash.yy",},"order":5,},
     {"id":{"name":"rRoom1","path":"rooms/rRoom1/rRoom1.yy",},"order":3,},
     {"id":{"name":"Sprite13","path":"sprites/Sprite13/Sprite13.yy",},"order":9,},

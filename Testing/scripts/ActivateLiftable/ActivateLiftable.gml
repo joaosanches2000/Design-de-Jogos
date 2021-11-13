@@ -1,11 +1,13 @@
 // @arg id
 
-/*if (global.iLifted == noone){
-	PlayerActOutAnimation(sPlayerLift);
+/*function ActivateLiftable(arg1){
+	if (global.iLifted == noone){
+		PlayerActOutAnimation(sMinotaur);
 	
-	global.iLifted = argument0;
-	with (global.iLifted){
-			lifted = true;
-			persistent = true;
+		global.iLifted = arg1;
+		with (global.iLifted){
+				lifted = true;
+				persistent = true;
+		}
 	}
 }*/

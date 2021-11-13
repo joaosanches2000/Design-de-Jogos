@@ -5,9 +5,14 @@ stateAttack = AttackSlash;
 hitByAttack = -1;
 collisionMap = layer_tilemap_get_id(layer_get_id("Collision"));
 
-walkSpeed = 3;
-hSpeed = 0;
-vSpeed = 0;
+walkSpeed = 2.0;
+image_speed=0;
+hSpeed=0;
+vSpeed=0;
+
+localFrame=0;
+spriteIdle=sPlayer;
+spriteRun=sPlayerRun;
 
 dodgeSpeed = 6;
 distanceDodge = 52;

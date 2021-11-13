@@ -4,7 +4,7 @@ function PlayerStateFree(){
 	PlayerCollision(); //script that handles player collision and movement
 
 
-	if(hSpeed > 0) //move right
+/*	if(hSpeed > 0) //move right
 		sprite_index = sRightWalk;
 
 	if(hSpeed < 0) //move left
@@ -14,13 +14,13 @@ function PlayerStateFree(){
 		sprite_index = sDownWalk;
 		
 	if(vSpeed < 0) //move up
-		sprite_index = sUpWalk;
+		sprite_index = sUpWalk;*/
 		
 	
 
 	if(vSpeed=0 and hSpeed=0){
 			switch (keyboard_lastkey){
-				case vk_down:
+				/*case vk_down:
 					sprite_index = sPlayer;
 					show_debug_message("vk_down");
 					break;
@@ -35,7 +35,7 @@ function PlayerStateFree(){
 				case vk_right:
 					sprite_index = sRightStand;
 					show_debug_message("vk_right");
-					break;
+					break;*/
 				case vk_shift:
 					if (image_speed > 0) {
 						if (image_index > image_number - 1){
