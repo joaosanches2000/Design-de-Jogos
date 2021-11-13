@@ -1,11 +1,13 @@
 // @description Global Variables
+collisionMap = layer_tilemap_get_id(layer_get_id("Collision"));
+
 state = PlayerStateFree;
 lastState = state;
 stateAttack = AttackSlash;
 hitByAttack = -1;
-collisionMap = layer_tilemap_get_id(layer_get_id("Collision"));
 
-walkSpeed = 2.0;
+
+walkSpeed = 3.0;
 image_speed=0;
 hSpeed=0;
 vSpeed=0;
