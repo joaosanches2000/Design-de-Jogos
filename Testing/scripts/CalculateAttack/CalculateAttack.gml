@@ -1,6 +1,6 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-function CalculateAttack(){
+function CalculateAttack(argument0){
 	mask_index = argument0;
 	var hitByAttackNow = ds_list_create(); //list of enemies hit by attack this frame
 	var hits = instance_place_list(x,y,Entity,hitByAttackNow,false); //if true list is ordered
