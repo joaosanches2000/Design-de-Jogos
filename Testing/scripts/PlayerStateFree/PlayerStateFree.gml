@@ -12,6 +12,10 @@ function PlayerStateFree(){
 	if (inputMagnitude != 0) {
 		direction = inputDirection;
 		sprite_index = spriteRun;
+		if (image_index=1 || image_index=3 || image_index=6 || image_index=9){
+			show_debug_message(image_index);
+			audio_play_sound(Running_Road,1,false);
+		}
 	} 
 	else 
 		sprite_index = spriteIdle;
@@ -24,12 +28,14 @@ function PlayerStateFree(){
 
 	if(keyAttack)
 	{
+		audio_play_sound(Dagger_slash,1,false)
 		state = PlayerStateAttack;	
 		stateAttack = AttackSlash;
 	}	
 	
 	if(keySpecialAttack)
 	{
+		audio_play_sound(Dagger_slash,1,false)
 		state = PlayerStateAttack;	
 		stateAttack = Attack360Slash;
 	}	

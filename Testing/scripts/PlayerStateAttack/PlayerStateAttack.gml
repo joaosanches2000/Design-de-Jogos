@@ -97,7 +97,7 @@ function Attack360Slash(){
 			hitByAttack = ds_list_create();
 		ds_list_clear(hitByAttack);
 		*/
-		show_debug_message("asdwasdbw")
+	
 	}
 	
 
@@ -113,9 +113,7 @@ function AttackSlash(){
 		
 		//localFrame = 0;
 		image_index = 0;
-		
-		show_debug_message("kuyfyfuguy")
-		
+	
 		PlayerAnimateSprite();
 		
 		
