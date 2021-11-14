@@ -5,12 +5,7 @@ Sprite_broadcast("footstep", function(){
 	audio_play_sound(Running_Road,1,false)
 });
 
-/*
-Sprite_broadcast("slash", function(){
-	show_debug_message("Slash");
-	audio_play_sound(Dagger_slash,1,false)
-});
-*/
+
 Sprite_broadcast("thunder", function(){
 	show_debug_message("Thunder");
 	audio_play_sound(Thunder,1,false)
