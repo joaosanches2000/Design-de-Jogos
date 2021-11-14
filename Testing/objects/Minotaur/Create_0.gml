@@ -11,6 +11,7 @@ state = ENEMYSTATE.WANDER;
 sprDie = sMinotaurDeath;
 sprWalk = sMinotaurWalk;
 sprAttack = sMinotaurAttack;
+sprHurt = sMinotaurHurt;
 //sprHurt
 //
 

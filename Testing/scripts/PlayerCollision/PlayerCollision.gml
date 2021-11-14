@@ -8,10 +8,10 @@ function PlayerCollision() {
 	//tilemap_get_at_pixel function returns number of tile in tile map. 0 is no tile, 1 is collision tile, etc.
 	if(tilemap_get_at_pixel(collisionMap, x + hSpeed, y))
 	{
-		x -= x mod TILE_SIZE; //snaps us to the -> left <- of the tile we're colliding with
-		if(sign(hSpeed) == 1)
+		//x -= x mod TILE_SIZE; //snaps us to the -> left <- of the tile we're colliding with
+		/*if(sign(hSpeed) == 1)
 			x += TILE_SIZE - 1;  //snaps us to the -> right <- of the tile we're colliding 
-		hSpeed = 0;
+		*/hSpeed = 0;
 		_collision = true;
 	}
 	
@@ -27,9 +27,11 @@ function PlayerCollision() {
 		{
 			if(sign(hSpeed) == -1)
 				_snapX = _entityCheck.bbox_right+1;
-			else
+			else if(sign(hSpeed) == 1)
 				_snapX = _entityCheck.bbox_left -1;
-			 //in case entity crashes into player
+			else	//in case entity crashes into player
+				_snapX = x;
+			 
 		
 			x = _snapX;
 			hSpeed = 0;
@@ -50,12 +52,14 @@ function PlayerCollision() {
 	//TILE H collision
 	if(tilemap_get_at_pixel(collisionMap, x, y + vSpeed))// || (tilemap_get_at_pixel(collisionMap, x, y + vSpeed + TILE_SIZE) && sign(vSpeed) == 1 ))
 	{
-		y -= y mod TILE_SIZE; //snaps us to the -> up <- of the tile we're colliding with
+		/*y -= y mod TILE_SIZE; //snaps us to the -> up <- of the tile we're colliding with
 		if(sign(vSpeed ) == 1)
-			y += TILE_SIZE -1;  //snaps us to the -> down <- of the tile we're colliding with
+			y += TILE_SIZE -1;*/  //snaps us to the -> down <- of the tile we're colliding with
 		vSpeed = 0;
 		_collision = true;
 	}
+	
+	
 
 	//ENTITY V collision	
 	var _entityCount = instance_position_list(x, y + vSpeed, Entity, _entityList, false);
@@ -66,8 +70,14 @@ function PlayerCollision() {
 		var _entityCheck  = _entityList[| 0];
 		if(_entityCheck.entityCollision == true)
 		{
-			if(sign(vSpeed) == -1) _snapY = _entityCheck.bbox_bottom+1;
-			else  _snapY = _entityCheck.bbox_top -1;
+			if(sign(vSpeed) == -1)
+				_snapY = _entityCheck.bbox_bottom + 1;
+			else if(sign(vSpeed) == 1)
+				_snapY = _entityCheck.bbox_top -1;
+			else	//in case entity crashes into player
+				_snapY = y;
+				
+				
 			y = _snapY;
 			vSpeed = 0;
 			_collision = true;
@@ -76,6 +86,7 @@ function PlayerCollision() {
 		ds_list_delete(_entityList,0);
 		_entityCount--;
 	}	
+	
 	
 	y += vSpeed;
 

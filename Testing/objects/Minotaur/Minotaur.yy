@@ -29,7 +29,7 @@
   ],
   "properties": [],
   "overriddenProperties": [
-    {"propertyId":{"name":"enemyHP","path":"objects/Enemy/Enemy.yy",},"objectId":{"name":"Enemy","path":"objects/Enemy/Enemy.yy",},"value":"30","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+    {"propertyId":{"name":"enemyHP","path":"objects/Enemy/Enemy.yy",},"objectId":{"name":"Enemy","path":"objects/Enemy/Enemy.yy",},"value":"500","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
   ],
   "parent": {
     "name": "Objects",

@@ -4,12 +4,81 @@ function PlayerStateAttack(){
 
 }
 
+
+function Attack360Slash(){
+	if(sprite_index != s360Slash || sprite_index != sPlayerAttackSlash) 
+	{
+		//Animation set-up
+		sprite_index = s360Slash;
+		
+		image_index = 0;
+		
+
+		//Clear hit list
+		if(!ds_exists(hitByAttack,ds_type_list))
+			hitByAttack = ds_list_create();
+		ds_list_clear(hitByAttack);
+		
+	}
+	
+	
+	CalculateAttack(sPlayerAttack360SlashCol);
+			
+	PlayerPlayAnimation();
+		
+	if(animationEnd)
+	{
+		state = PlayerStateFree;			
+		animationEnd = false;
+		
+	}
+		
+	
+	
+	//CalculateAttack(sPlayerAttackSlashCol);
+
+}
+
+function AttackSlash(){
+	if(sprite_index != sPlayerAttackSlash || sprite_index != s360Slash) 
+	{
+		//Animation set-up
+		sprite_index = sPlayerAttackSlash;
+		
+		//localFrame = 0;
+		image_index = 0;
+		
+		
+		//Clear hit list
+		if(!ds_exists(hitByAttack,ds_type_list))
+			hitByAttack = ds_list_create();
+		ds_list_clear(hitByAttack);
+			
+	}
+	
+	
+	CalculateAttack(sPlayerAttackSlashCol);
+	
+	//Animate Sprite
+	PlayerAnimateSprite();
+				
+	if(animationEnd)
+	{
+		state = PlayerStateFree;			
+		animationEnd = false;
+	}
+		
+	
+}
+
+
+
 function CalculateAttack(argument0){
 	mask_index = argument0;
 	var hitByAttackNow = ds_list_create(); //list of enemies hit by attack this frame
 	var hits = instance_place_list(x,y,Entity,hitByAttackNow,false); //if true list is ordered
 	if(hits > 0)
-	{
+	{		
 		for(var i = 0; i < hits; i++)
 		{
 			//hit instance
@@ -72,6 +141,7 @@ function HurtEnemy(_enemy,_damage,_source, _knockback)
 	}
 
 
+<<<<<<< Updated upstream
 }
 
 function Attack360Slash(){
@@ -144,4 +214,6 @@ function AttackSlash(){
 		slashCountdown = 12;
 	}*/
 
+=======
+>>>>>>> Stashed changes
 }
