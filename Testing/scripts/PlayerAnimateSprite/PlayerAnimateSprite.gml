@@ -5,11 +5,7 @@ function PlayerAnimateSprite(){
 	image_index = localFrame + (CARDINAL_DIR * _totalFrames);
 
 	localFrame += sprite_get_speed(sprite_index) / FRAME_RATE;
-<<<<<<< Updated upstream
-=======
 
-
->>>>>>> Stashed changes
 	//If animation would loop on next game step
 	if (localFrame >= _totalFrames){
 		//audio_stop_sound(Running_Road);

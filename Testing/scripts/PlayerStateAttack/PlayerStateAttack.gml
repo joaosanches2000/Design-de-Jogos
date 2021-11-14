@@ -32,10 +32,6 @@ function Attack360Slash(){
 		animationEnd = false;
 		
 	}
-		
-	
-	
-	//CalculateAttack(sPlayerAttackSlashCol);
 
 }
 
@@ -141,79 +137,4 @@ function HurtEnemy(_enemy,_damage,_source, _knockback)
 	}
 
 
-<<<<<<< Updated upstream
-}
-
-function Attack360Slash(){
-	if(sprite_index != s360Slash || sprite_index != sPlayerAttackSlash) 
-	{
-		//Animation set-up
-		sprite_index = s360Slash;
-		
-		image_index = 0;
-		
-		
-		PlayerPlayAnimation();
-		
-		if(animationEnd)
-		{
-			state = PlayerStateFree;			
-			animationEnd = false;
-		
-		}
-		
-		//Clear hit list
-		/*if(!ds_exists(hitByAttack,ds_type_list))
-			hitByAttack = ds_list_create();
-		ds_list_clear(hitByAttack);
-		*/
-	
-	}
-	
-
-	//CalculateAttack(sPlayerAttackSlashCol);
-
-}
-
-function AttackSlash(){
-	if(sprite_index != sPlayerAttackSlash || sprite_index != s360Slash) 
-	{
-		//Animation set-up
-		sprite_index = sPlayerAttackSlash;
-		
-		//localFrame = 0;
-		image_index = 0;
-	
-		PlayerAnimateSprite();
-		
-		
-		//CalculateAttack(sPlayerAttackSlashCol);
-		
-		if(animationEnd)
-		{
-			state = PlayerStateFree;			
-			animationEnd = false;
-		}
-		/*//Clear hit list
-		if(!ds_exists(hitByAttack,ds_type_list))
-			hitByAttack = ds_list_create();
-		ds_list_clear(hitByAttack);
-	`	*/
-		
-		
-	}
-	
-	
-	
-	/*//TODO: Animate Sprite Script
-	slashCountdown--;
-	
-	if(slashCountdown == 0)
-	{
-		state = PlayerStateFree;
-		slashCountdown = 12;
-	}*/
-
-=======
->>>>>>> Stashed changes
 }
