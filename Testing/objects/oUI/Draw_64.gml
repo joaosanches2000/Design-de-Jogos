@@ -1,4 +1,13 @@
 //
+var _playerHealth = global.playerHealth;
+var _playerHealthMax = global.playerHealthMax;
+//var _playerHealthFrac = frac(_playerHealth);
+//_playerHealth -= _playerHealthFrac;
+
+for(var i=1; i<=_playerHealthMax; i++){
+	var _imageIndex = (i >_playerHealth);
+	draw_sprite(sHealth,_imageIndex,20+((i-1)*35), 20);	
+}
 
 if (global.gamePaused){
 	draw_set_color(c_black);

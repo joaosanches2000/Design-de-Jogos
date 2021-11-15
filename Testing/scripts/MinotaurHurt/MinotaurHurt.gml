@@ -19,8 +19,6 @@ function MinotaurHurt(){
 			xTo = x;
 			yTo = y;
 		}
-
-
 	
 	}
 	else
