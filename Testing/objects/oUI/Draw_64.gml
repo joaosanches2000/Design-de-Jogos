@@ -19,18 +19,28 @@ if (global.gamePaused){
 	draw_set_halign(fa_center);
 	draw_set_valign(fa_middle);
 	
-	draw_text(RESOLUTION_W * 0.5, RESOLUTION_H * 0.5 - 30, "GAME PAUSED");
-	for (var i=0; i < array_length(pauseOption);i++){
-		var _print="";
-		if(i==pauseOptionSelected){
-			_print += "0 " + pauseOption[i] + " 0";
+	with(Player){
+		if(state==PlayerStateDead){
+			draw_text(RESOLUTION_W * 0.5, RESOLUTION_H * 0.5 - 30, "GAME OVER");
+			oUI.pauseOption = oUI.gameOverOption;
 		} else {
-			_print += pauseOption[i];
-			draw_set_alpha(0.7);
+			draw_text(RESOLUTION_W * 0.5, RESOLUTION_H * 0.5 - 30, "GAME PAUSED");
 		}
-		draw_text(RESOLUTION_W * 0.5, RESOLUTION_H * 0.5 + 18 +(i*40), _print);
-		draw_set_alpha(1.0);
-	
+		
 	}
+	
+	for (var i=0; i < array_length(pauseOption);i++){
+			var _print="";
+			if(i==pauseOptionSelected){
+				_print += "0 " + pauseOption[i] + " 0";
+			} else {
+				_print += pauseOption[i];
+				draw_set_alpha(0.7);
+			}
+			draw_text(RESOLUTION_W * 0.5, RESOLUTION_H * 0.5 + 18 +(i*40), _print);
+			draw_set_alpha(1.0);
+		}
+	
+	
 	
 }

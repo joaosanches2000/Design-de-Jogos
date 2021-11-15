@@ -9,24 +9,43 @@ if (global.gamePaused){
 	
 	keyActivate = keyboard_check_pressed(vk_enter);
 	if(keyActivate){
-		switch(pauseOptionSelected){
-			case 0: //Resume
-			{
-				global.gamePaused = false;
-				with(all){
-					image_speed = gamePausedImageSpeed;
+		with(Player){
+			if(state==PlayerStateDead){
+				switch(oUI.pauseOptionSelected){
+					case 0: //Restart
+					{
+						with(GameLogic) instance_destroy();
+						with(oSound) instance_destroy();
+						game_restart();
+					} break;
+					
+					case 1:
+					{
+						game_end();
+					}break;
 				}
-			} break;
-			case 1: //restart
-			{
-				with(GameLogic) instance_destroy();
-				with(oSound) instance_destroy();
-				game_restart();
-			} break;
-			case 2:
-			{
-				game_end();
-			}break;
+			} else {
+				switch(oUI.pauseOptionSelected){
+					case 0: //Resume
+					{
+						global.gamePaused = false;
+						with(all){
+							image_speed = oUI.gamePausedImageSpeed;
+						}
+					} break;
+					
+					case 1: //restart
+					{
+						with(GameLogic) instance_destroy();
+						with(oSound) instance_destroy();
+						game_restart();
+					} break;
+					case 2:
+					{
+						game_end();
+					}break;
+				}
+			}
 		}
 	}
 }
