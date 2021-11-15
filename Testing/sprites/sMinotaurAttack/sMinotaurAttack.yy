@@ -59,7 +59,7 @@
     "spriteId": {"name":"sMinotaurAttack","path":"sprites/sMinotaurAttack/sMinotaurAttack.yy",},
     "timeUnits": 1,
     "playback": 1,
-    "playbackSpeed": 13.0,
+    "playbackSpeed": 5.0,
     "playbackSpeedType": 0,
     "autoRecord": true,
     "volume": 1.0,

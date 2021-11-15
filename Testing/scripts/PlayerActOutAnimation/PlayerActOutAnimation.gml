@@ -1,13 +1,18 @@
-// @desc PlayerActOutAnimation(Sprite, EndScript)
-// @arg Sprite
-// @arg EndScript
+/// @desc PlayerActOutAnimation(Sprite, EndScript)
+/// @arg Sprite
+/// @arg EndScript
 
 // Carry out an animation and optionally carry out a script when the animation ends
 
-/*state = PlayerStateAct();
-sprite_index = sMinotaur;
+function PlayerActOutAnimation(argument0){
+	
+	state = PlayerStateAct;
+	sprite_index = argument0;
 
-if (argument_count>1) animationEndScript = argument [1];
-localFrame = 0;
-image_index = 0;
-PlayerAnimateSprite();*/
+	/*if (argument_count > 1) 
+		animationEndScript = argument1;*/
+	localFrame = 0;
+	image_index = 0;
+	
+	PlayerAnimateSprite();
+}

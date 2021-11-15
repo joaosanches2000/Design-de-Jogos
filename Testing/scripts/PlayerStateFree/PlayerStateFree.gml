@@ -43,10 +43,36 @@ function PlayerStateFree(){
 	
 
 
-	if(keyDodge)
+	if(keyActivate)
 	{
-		state = PlayerStateDodge;
-		moveDistanceRemaining = distanceDodge;
+		var _activateX = lengthdir_x(10,direction);
+		var _activateY = lengthdir_y(10,direction);
+		/*var _activateSize = 4;
+		var _activateList = ds_list_create();
+		activate =  noone;
+		*/
+		//ds_list_destroy(_activateList);
+		
+		activate = instance_position(x+_activateX,y+_activateY,Entity);
+		
+		if(activate == noone || activate.entityActivateScript == -1)
+		{
+			if(global.iLifted != noone)
+			{
+				PlayerThrow();
+			}
+			
+			state = PlayerStateDodge;
+			moveDistanceRemaining = distanceDodge;
+		
+		
+		}
+		else
+		{
+			ScriptExecuteArray(activate.entityActivateScript,activate.entityActivateArgs);
+			
+			//TODO : MAKE ENTETY FACE PLAYER IF YOU WANT I DONT
+		}
 		
 	}
 
@@ -76,6 +102,7 @@ function PlayerStateFree(){
 					break;
 				case vk_left:
 					sprite_index = sLeftStand;
+					
 					show_debug_message("vk_left");
 					break;
 				case vk_right:

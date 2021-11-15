@@ -6,7 +6,7 @@
     "path": "folders/Scripts/Pick Up.yy",
   },
   "resourceVersion": "1.0",
-  "name": "PlayerActOutAnimation",
+  "name": "ScriptExecuteArray",
   "tags": [],
   "resourceType": "GMScript",
 }

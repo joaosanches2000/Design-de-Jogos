@@ -23,4 +23,4 @@ draw_sprite_ext(
 	
 
 if(shader_current() != -1)
-	shader_reset();
+	shader_reset();	
