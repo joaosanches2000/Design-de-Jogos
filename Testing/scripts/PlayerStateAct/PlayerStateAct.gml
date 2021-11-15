@@ -9,9 +9,8 @@ function PlayerStateAct() {
 		animationEnd = false;
 		if (animationEndScript != -1)
 		{
-			ScriptExecuteArray(activate.entityActivateScript,activate.entityActivateArgs);
-			//script_execute(animationEndScript);
+			script_execute(animationEndScript);
 			animationEndScript = -1;
 		}
 	}
-} 
+}

@@ -40,6 +40,13 @@ function PlayerStateFree(){
 		stateAttack = Attack360Slash;
 	}	
 	
+	if(keyGun)
+	{
+		audio_play_sound(Thunder,1,false)
+		state = PlayerStateAttack;	
+		stateAttack = AttackGun;
+	}	
+	
 	
 
 
@@ -59,11 +66,14 @@ function PlayerStateFree(){
 		{
 			if(global.iLifted != noone)
 			{
+				
 				PlayerThrow();
 			}
-			
+			else {
 			state = PlayerStateDodge;
 			moveDistanceRemaining = distanceDodge;
+			
+			}
 		
 		
 		}
