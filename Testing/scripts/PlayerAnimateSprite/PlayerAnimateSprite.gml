@@ -8,7 +8,7 @@ function PlayerAnimateSprite(){
 
 	//If animation would loop on next game step
 	if (localFrame >= _totalFrames){
-		//audio_stop_sound(Running_Road);
+		
 		animationEnd = true;
 		localFrame -= _totalFrames; 
 	}
