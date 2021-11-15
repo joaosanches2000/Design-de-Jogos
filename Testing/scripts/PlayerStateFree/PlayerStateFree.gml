@@ -59,11 +59,14 @@ function PlayerStateFree(){
 		{
 			if(global.iLifted != noone)
 			{
+				
 				PlayerThrow();
 			}
-			
+			else {
 			state = PlayerStateDodge;
 			moveDistanceRemaining = distanceDodge;
+			
+			}
 		
 		
 		}

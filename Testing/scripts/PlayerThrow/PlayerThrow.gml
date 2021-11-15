@@ -6,9 +6,9 @@ function PlayerThrow(){
 	{
 		lifted = false;
 		persistent = false; 
-		entityCollision = true;
-		thrown = 0;
-		throwPeakHeight = 10;
+		//entityCollision = true;
+		thrown = true;
+		throwPeakHeight = other.y - 10;
 		throwDistance = entityThrowDistance;
 		throwDistanceTravelled = 0;
 		throwStartPercent = (13/throwPeakHeight) * 0.5;
