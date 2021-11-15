@@ -1,7 +1,8 @@
 /// @description Pausing
 
-if(keyboard_check_pressed(vk_escape))
+if(keyboard_check_pressed(vk_escape) || global.Morreu)
 {
+	global.Morreu = false;
 	global.gamePaused = !global.gamePaused; //toggles pause on/off
 	
 	if(global.gamePaused)

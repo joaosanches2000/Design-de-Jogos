@@ -26,3 +26,10 @@ enum ENEMYSTATE
 	WAIT
 		
 }
+
+enum ITEM {
+	NONE,
+	DYN,
+	ZEUS,
+	TYPE_COUNT,
+}

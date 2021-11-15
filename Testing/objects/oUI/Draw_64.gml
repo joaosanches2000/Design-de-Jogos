@@ -9,6 +9,38 @@ for(var i=1; i<=_playerHealthMax; i++){
 	draw_sprite(sHealth,_imageIndex,20+((i-1)*35), 20);	
 }
 
+//Draw Item box
+_xx = 20;
+_yy = 60;
+
+draw_sprite(sItemBox,0,_xx+20,_yy-5);
+if(global.playerHasAnyItems){
+	draw_sprite(sItem,global.playerEquipped,_xx, _yy);
+	if(global.playerAmmo[global.playerEquipped] != -1){
+		
+	
+		draw_set_font(fAmmo);
+		draw_set_halign(fa_right);
+		draw_set_valign(fa_bottom);
+		draw_set_color(c_white);
+		if(global.playerEquipped == 2){
+				draw_text(
+			_xx + sprite_get_width(sItemBox)-20,
+			_yy + sprite_get_height(sItemBox)-65
+			,
+			"Zeus"
+			);
+		} else{
+				draw_text(
+			_xx + sprite_get_width(sItemBox)+1,
+			_yy + sprite_get_height(sItemBox)+1,
+			"Dyonisis"
+			);
+		}
+		
+	}
+}
+
 if (global.gamePaused){
 	draw_set_color(c_black);
 	draw_set_alpha(0.75);
