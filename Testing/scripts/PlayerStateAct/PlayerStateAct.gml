@@ -13,4 +13,4 @@ function PlayerStateAct() {
 			animationEndScript = -1;
 		}
 	}
-}  
+}
