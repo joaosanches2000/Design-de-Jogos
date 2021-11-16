@@ -2,7 +2,7 @@
 
 //death
 if(!global.gamePaused)
-{
+{	
 	depth = -bbox_bottom;
 
 	if(lifted && instance_exists(Player))
@@ -54,6 +54,7 @@ if(!global.gamePaused)
 						if(entityIsMagicPot)
 						{
 							instance_create_depth(x,y,depth,oMaskUnlock)
+							NewTextBox("pillinha", 0);
 						}
 						instance_destroy();
 						

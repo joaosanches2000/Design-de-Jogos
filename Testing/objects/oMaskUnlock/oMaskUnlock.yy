@@ -33,6 +33,8 @@
     {"propertyId":{"name":"entityActivateScript","path":"objects/Entity/Entity.yy",},"objectId":{"name":"Entity","path":"objects/Entity/Entity.yy",},"value":"NewTextBox","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
     {"propertyId":{"name":"entityActivateArgs","path":"objects/Entity/Entity.yy",},"objectId":{"name":"Entity","path":"objects/Entity/Entity.yy",},"value":"[\"Item description\",1,[\"6.Keep it\", \"0:Leave it\"]]","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
     {"propertyId":{"name":"entityCollision","path":"objects/Entity/Entity.yy",},"objectId":{"name":"Entity","path":"objects/Entity/Entity.yy",},"value":"True","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+    {"propertyId":{"name":"entityIsMagicPot","path":"objects/Entity/Entity.yy",},"objectId":{"name":"Entity","path":"objects/Entity/Entity.yy",},"value":"False","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+    {"propertyId":{"name":"entityIsMask","path":"objects/Entity/Entity.yy",},"objectId":{"name":"Entity","path":"objects/Entity/Entity.yy",},"value":"True","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
   ],
   "parent": {
     "name": "Objects",

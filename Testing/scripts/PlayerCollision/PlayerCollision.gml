@@ -28,12 +28,17 @@ function PlayerCollision() {
 			if(sign(hSpeed) == -1)
 				_snapX = _entityCheck.bbox_right+1;
 			else if(sign(hSpeed) == 1)
-				_snapX = _entityCheck.bbox_left -1;
+				_snapX = _entityCheck.bbox_left-1;
 			else	//in case entity crashes into player
 				_snapX = x;
-			 
-		
-			x = _snapX;
+			 with(oMaskUnlock){
+				if(entityIsMask){
+					global.playerHasAnyItems=true;
+					global.playerItemUnlocked[ITEM.DYN]=true;
+						instance_destroy(); 
+				} 
+			 }
+			
 			hSpeed = 0;
 			_collision = true;
 			_entityCount = 0;

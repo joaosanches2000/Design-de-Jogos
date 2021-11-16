@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "Greek_elements",
-    "path": "sprites/Greek_elements/Greek_elements.yy",
+    "name": "Sprite12",
+    "path": "sprites/Sprite12/Sprite12.yy",
   },
   "tileWidth": 16,
   "tileHeight": 16,
@@ -360,7 +360,7 @@
     "path": "folders/Tile Sets.yy",
   },
   "resourceVersion": "1.0",
-  "name": "Greek",
+  "name": "GroundSmool",
   "tags": [],
   "resourceType": "GMTileSet",
 }
