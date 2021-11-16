@@ -15,8 +15,8 @@ _yy = 60;
 
 draw_sprite(sItemBox,0,_xx+20,_yy-5);
 if(global.playerHasAnyItems){
-	draw_sprite(sItem,global.playerEquipped,_xx, _yy);
-	if(global.playerAmmo[global.playerEquipped] != -1){
+	draw_sprite(sItem,global.playerEquipped,_xx+20, _yy+55);
+	if(global.playerAmmo[global.playerEquipped] != -1) {
 		
 	
 		draw_set_font(fAmmo);

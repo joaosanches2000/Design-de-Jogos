@@ -25,7 +25,7 @@ global.playerAmmo[ITEM.HERMES]=1;
 global.playerHasAnyItems=true;
 
 global.playerItemUnlocked[ITEM.ZEUS]=true;
-global.playerItemUnlocked[ITEM.DYN]=true;
+global.playerItemUnlocked[ITEM.DYN]=false;
 global.playerItemUnlocked[ITEM.HERMES]=true;
 
 
