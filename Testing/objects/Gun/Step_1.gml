@@ -4,7 +4,7 @@ x = Player.x + 3;
 y = Player.y - 4;
 
 firing_delay = firing_delay-1;
-if (mouse_check_button_released(mb_left) && (firing_delay <0)){
+if (mouse_check_button_released(mb_left) && (firing_delay <0) && global.playerEquipped== ITEM.ZEUS){
 	firing_delay = 1;
 	with instance_create_layer(mouse_x,mouse_y,"Bullets", Bullet){
 		speed = 0;

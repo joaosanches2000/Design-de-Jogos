@@ -117,7 +117,7 @@
       ],"parent":{"name":"sItem","path":"sprites/sItem/sItem.yy",},"resourceVersion":"1.0","name":"fe76fdd3-a712-4c85-a21a-7dfb81138af6","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"sDyoMask","path":"sprites/sDyoMask/sDyoMask.yy",},
+    "spriteId": {"name":"sItem","path":"sprites/sItem/sItem.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -149,7 +149,7 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"sDyoMask","path":"sprites/sDyoMask/sDyoMask.yy",},
+    "parent": {"name":"sItem","path":"sprites/sItem/sItem.yy",},
     "resourceVersion": "1.3",
     "name": "",
     "tags": [],
