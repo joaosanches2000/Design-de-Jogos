@@ -31,5 +31,6 @@ enum ITEM {
 	NONE,
 	DYN,
 	ZEUS,
+	HERMES,
 	TYPE_COUNT,
 }

@@ -11,6 +11,8 @@ keySpecialAttack = keyboard_check_pressed(vk_shift);
 keyActivate = keyboard_check_pressed(vk_space);
 keyItem = keyboard_check_pressed(vk_control);
 keyGun = mouse_check_button_released(mb_left);
+keyItemSelectUp = keyboard_check_pressed(ord("E"));
+keyItemSelectDown = keyboard_check_pressed(ord("Q")); 
 
 inputDirection = point_direction(0,0,keyRight - keyLeft, keyDown - keyUp);
 inputMagnitude = (keyRight - keyLeft != 0) || (keyDown - keyUp != 0)

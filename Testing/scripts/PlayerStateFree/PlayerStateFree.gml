@@ -42,13 +42,13 @@ function PlayerStateFree(){
 	
 	if(keyGun)
 	{
-		audio_play_sound(Thunder,1,false)
-		state = PlayerStateAttack;	
-		stateAttack = AttackGun;
+		if (global.playerEquipped == ITEM.ZEUS){
+			audio_play_sound(Thunder,1,false)
+			state = PlayerStateAttack;	
+			stateAttack = AttackGun;
+		}
 	}	
 	
-	
-
 
 	if(keyActivate)
 	{
@@ -70,9 +70,10 @@ function PlayerStateFree(){
 				PlayerThrow();
 			}
 			else {
-			state = PlayerStateDodge;
-			moveDistanceRemaining = distanceDodge;
-			
+				if (global.playerEquipped == ITEM.HERMES){
+					state = PlayerStateDodge;
+					moveDistanceRemaining = distanceDodge;
+				}
 			}
 		
 		
@@ -85,6 +86,27 @@ function PlayerStateFree(){
 		}
 		
 	}
+	
+	//Cycle items
+	
+	if (global.playerHasAnyItems){
+		var _cycleDirection = keyItemSelectUp - keyItemSelectDown;
+		if (_cycleDirection != 0){
+			do{
+				global.playerEquipped += _cycleDirection;
+				if(global.playerEquipped <1) global.playerEquipped = ITEM.TYPE_COUNT-1;
+				if(global.playerEquipped >= ITEM.TYPE_COUNT) global.playerEquipped = 1;
+								
+			} until (global.playerItemUnlocked[global.playerEquipped]);
+		}
+	}
+	
+	/*if (keyItem) && (!keyActivate) && (global.playerHasAnyItems) && (global.playerEquipped != ITEM.NONE){
+		switch(global.playerEquipped){
+			case ITEM.ZEUS: global.Zeus=true; break;
+			case ITEM.DYN: break;
+		}
+	}*/
 
 /*	if(hSpeed > 0) //move right
 		sprite_index = sRightWalk;
