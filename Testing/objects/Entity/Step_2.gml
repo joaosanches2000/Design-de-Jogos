@@ -1,5 +1,5 @@
 /// @description Global code for every entity
-
+image_speed=0;
 //death
 if(!global.gamePaused)
 {
@@ -11,8 +11,9 @@ if(!global.gamePaused)
 		if(Player.sprite_index != sPlayerLift)
 		{
 			x = Player.x;
-			y = Player.y -13;
+			y = Player.y;
 			depth = Player.depth-1;
+			z = 13;
 			
 		}
 	}
@@ -22,37 +23,62 @@ if(!global.gamePaused)
 		if(thrown)
 		{	
 			
+			
+			depth = Player.depth-1;
 			entityCollision = true;
 			throwDistanceTravelled = min(throwDistanceTravelled+3,throwDistance);
 			x = xstart + lengthdir_x(throwDistanceTravelled,direction);
 			y = ystart + lengthdir_y(throwDistanceTravelled,direction);
+			//z = y;
 			if(tilemap_get_at_pixel(collisionMap,x,y) > 0)
 			{
-				thrown = false;
+				
 				grv = 0.1;
-			
+				thrown = false;
+					
 			}
+
+			
+			
 			
 			throwPercent = throwStartPercent + lerp(0,1 - throwStartPercent, throwDistanceTravelled / throwDistance);
-			y = throwPeakHeight * sin(throwPercent * pi);
+			z = throwPeakHeight * sin(throwPercent * pi);
 			
 			if(throwDistance == throwDistanceTravelled)
 			{
-				thrown = false;
-				if(entityThrowBreak)
-					instance_destroy();
+				
+				if(entityThrowBreak){
+					EntityPlayAnimation();
+					if(entityAnimationEnd){
+						entityAnimationEnd = false;
+						instance_destroy();
+					}
+						
+				}
+					
 			
 			}
 		}
 		else
 		{
+			
 			if(z > 0)
-			{
+			{	
+				//@Copyright Adriano Vaz
+				for(i=0; i<3;i++)	//isto funciona n sei pq, mas agr n tenho cabeça
+					EntityPlayAnimation();
+				//Fim de @Copyright lolitos
+				
+				if(entityAnimationEnd) {
+					entityAnimationEnd = false;
+					instance_destroy();
+				}
 				z = max(z-grv, 0);
 				grv += 0.1;
 				if(z==0 && entityThrowBreak)
-					instance_destroy();
-			
+				{
+					//aqui deviam estar cenas mas n tao lol
+				}	
 			}
 			else
 			{

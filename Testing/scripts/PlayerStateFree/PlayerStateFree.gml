@@ -52,17 +52,40 @@ function PlayerStateFree(){
 
 	if(keyActivate)
 	{
-		var _activateX = lengthdir_x(10,direction);
-		var _activateY = lengthdir_y(10,direction);
-		/*var _activateSize = 4;
+		var _activateX = x + lengthdir_x(10,direction);
+		var _activateY = y + lengthdir_y(10,direction);
+		var _activateSize = 4;
 		var _activateList = ds_list_create();
 		activate =  noone;
-		*/
-		//ds_list_destroy(_activateList);
+		var _entitiesFound = collision_rectangle_list(
+			_activateX - _activateSize,
+			_activateY - _activateSize,	
+			_activateX + _activateSize,
+			_activateY + _activateSize,
+			Entity,
+			false,
+			true,
+			_activateList,
+			true		
+		);
 		
-		activate = instance_position(x+_activateX,y+_activateY,Entity);
+		//if the first instance we find is either our lifted entity or it has no script: try the next one
+		while(_entitiesFound > 0)
+		{
+			var _check = _activateList[| --_entitiesFound];
+			if(_check != global.iLifted && _check.entityActivateScript != -1)
+			{
+				activate = _check;
+				break;
+			}
+		}
 		
-		if(activate == noone || activate.entityActivateScript == -1)
+		
+		ds_list_destroy(_activateList);
+		
+		//activate = instance_position(x+_activateX,y+_activateY,Entity);
+		
+		if(activate == noone)
 		{
 			if(global.iLifted != noone)
 			{
