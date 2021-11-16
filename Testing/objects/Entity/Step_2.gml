@@ -1,5 +1,5 @@
 /// @description Global code for every entity
-image_speed=0;
+
 //death
 if(!global.gamePaused)
 {
@@ -51,7 +51,13 @@ if(!global.gamePaused)
 					EntityPlayAnimation();
 					if(entityAnimationEnd){
 						entityAnimationEnd = false;
+						if(entityIsMagicPot)
+						{
+							instance_create_depth(x,y,depth,oMaskUnlock)
+						}
 						instance_destroy();
+						
+						
 					}
 						
 				}
@@ -64,7 +70,12 @@ if(!global.gamePaused)
 			
 			if(z > 0)
 			{	
-				//@Copyright Adriano Vaz
+
+				z = max(z-grv, 0);
+				grv += 0.1;
+				if(z==0 && entityThrowBreak)
+				{
+									//@Copyright Adriano Vaz
 				for(i=0; i<3;i++)	//isto funciona n sei pq, mas agr n tenho cabeça
 					EntityPlayAnimation();
 				//Fim de @Copyright lolitos
@@ -73,10 +84,6 @@ if(!global.gamePaused)
 					entityAnimationEnd = false;
 					instance_destroy();
 				}
-				z = max(z-grv, 0);
-				grv += 0.1;
-				if(z==0 && entityThrowBreak)
-				{
 					//aqui deviam estar cenas mas n tao lol
 				}	
 			}
