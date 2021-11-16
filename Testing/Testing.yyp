@@ -64,6 +64,7 @@
     {"id":{"name":"Minotaur","path":"objects/Minotaur/Minotaur.yy",},"order":9,},
     {"id":{"name":"Water_samples","path":"sprites/Water_samples/Water_samples.yy",},"order":4,},
     {"id":{"name":"Logo","path":"sprites/Logo/Logo.yy",},"order":13,},
+    {"id":{"name":"sHermes","path":"sprites/sHermes/sHermes.yy",},"order":25,},
     {"id":{"name":"Cliff_samples","path":"sprites/Cliff_samples/Cliff_samples.yy",},"order":5,},
     {"id":{"name":"PlayerThrow","path":"scripts/PlayerThrow/PlayerThrow.yy",},"order":3,},
     {"id":{"name":"MACROS","path":"scripts/MACROS/MACROS.yy",},"order":0,},

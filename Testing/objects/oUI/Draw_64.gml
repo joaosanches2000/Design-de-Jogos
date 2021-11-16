@@ -30,11 +30,17 @@ if(global.playerHasAnyItems){
 			,
 			"Zeus"
 			);
-		} else{
+		} else if(global.playerEquipped == 1){
 				draw_text(
-			_xx + sprite_get_width(sItemBox)+1,
-			_yy + sprite_get_height(sItemBox)+1,
+			_xx + sprite_get_width(sItemBox)-10,
+			_yy + sprite_get_height(sItemBox)-65,
 			"Dyonisis"
+			);
+		} if(global.playerEquipped == 3){
+				draw_text(
+			_xx + sprite_get_width(sItemBox)-15,
+			_yy + sprite_get_height(sItemBox)-65,
+			"Hermes"
 			);
 		}
 		
