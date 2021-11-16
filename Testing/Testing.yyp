@@ -6,7 +6,6 @@
     {"id":{"name":"PlayerCollision","path":"scripts/PlayerCollision/PlayerCollision.yy",},"order":0,},
     {"id":{"name":"Sprite14","path":"sprites/Sprite14/Sprite14.yy",},"order":2,},
     {"id":{"name":"VinePickUp","path":"scripts/VinePickUp/VinePickUp.yy",},"order":16,},
-    {"id":{"name":"testing","path":"scripts/testing/testing.yy",},"order":15,},
     {"id":{"name":"fText","path":"fonts/fText/fText.yy",},"order":2,},
     {"id":{"name":"Sprite15","path":"sprites/Sprite15/Sprite15.yy",},"order":3,},
     {"id":{"name":"oTextQueued","path":"objects/oTextQueued/oTextQueued.yy",},"order":9,},

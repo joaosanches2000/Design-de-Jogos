@@ -3,9 +3,9 @@
 function VinePickUp(arg1){
 	
 	if (global.iLifted == noone) {
-		
+		entityCollision = false;
 		PlayerActOutAnimation(sPlayerLift);
-		var _instanceId = instance_create_depth(x,y,depth,Pot);
+		var _instanceId = instance_create_depth(x,y-10,depth,Pot);
 		global.iLifted = _instanceId;
 		lifted = true;
 		persistent = true;
