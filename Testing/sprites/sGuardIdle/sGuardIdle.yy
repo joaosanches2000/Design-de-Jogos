@@ -147,6 +147,10 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"569cd2e7-2b12-4232-b816-6c27d751b343","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
+  "parent": {
+    "name": "Testing",
+    "path": "Testing.yyp",
+  },
   "resourceVersion": "1.0",
   "name": "sGuardIdle",
   "tags": [],
