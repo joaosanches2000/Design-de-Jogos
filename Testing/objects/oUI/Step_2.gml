@@ -24,10 +24,26 @@ if (global.gamePaused){
 						game_end();
 					}break;
 				}
-			} else {
+			} else if(global.control = true){
+				pauseOptionSelected=0;
+				global.control = false;
+				global.gamePaused = false;
+				show_debug_message("aqui tou eu333333333");
+					show_debug_message(oUI.pauseOption);
+				if (oUI.pauseOptionSelected==0){
+					show_debug_message("aqui tou eu222222");
+						global.gamePaused = true;
+				}						
+					
+				
+				
+			}else {
+					show_debug_message(oUI.pauseOption);
 				switch(oUI.pauseOptionSelected){
+					
 					case 0: //Resume
 					{
+						
 						global.gamePaused = false;
 						with(all){
 							image_speed = oUI.gamePausedImageSpeed;
@@ -40,7 +56,11 @@ if (global.gamePaused){
 						with(oSound) instance_destroy();
 						game_restart();
 					} break;
-					case 2:
+					case 2:{
+						show_debug_message("aqui tou eu444444444");
+						global.control = true;			
+					} break;
+					case 3:
 					{
 						game_end();
 					}break;

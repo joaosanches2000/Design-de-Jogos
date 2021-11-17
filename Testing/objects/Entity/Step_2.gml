@@ -51,6 +51,7 @@ if(!global.gamePaused)
 						entityAnimationEnd = false;
 						if(entityIsMagicPot)
 						{
+							
 							instance_create_depth(x,y,depth,oMaskUnlock)
 							NewTextBox("Great, you found it!", 0);
 							NewTextBox("I wonder how to use its powers...", 0);

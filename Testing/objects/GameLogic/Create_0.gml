@@ -9,7 +9,7 @@ global.playerHealthMax=3;
 global.playerHealth = global.playerHealthMax;
 global.Morreu=false;
 global.oUI = instance_create_layer(0,0,layer,oUI);
-
+global.control = false;
 global.Zeus=false;
 
 

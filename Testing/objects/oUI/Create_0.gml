@@ -1,4 +1,4 @@
-pauseOption=["Resume", "Restart", "Quit"];
+pauseOption=["Resume", "Restart", "Controls", "Quit"];
 pauseOptionSelected=0;
 
 gameOverOption =["Restart", "Quit"];

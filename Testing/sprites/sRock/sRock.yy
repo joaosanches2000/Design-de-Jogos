@@ -7,15 +7,15 @@
   "edgeFiltering": false,
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
-  "bbox_left": 81,
-  "bbox_right": 276,
-  "bbox_top": 83,
-  "bbox_bottom": 275,
+  "bbox_left": 71,
+  "bbox_right": 126,
+  "bbox_top": 33,
+  "bbox_bottom": 71,
   "HTile": false,
   "VTile": false,
   "For3D": false,
-  "width": 360,
-  "height": 360,
+  "width": 200,
+  "height": 129,
   "textureGroupId": {
     "name": "Default",
     "path": "texturegroups/Default",
@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"c2e600eb-089c-49dd-8268-d3fff4b41d13","path":"sprites/sColFire/sColFire.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"c2e600eb-089c-49dd-8268-d3fff4b41d13","path":"sprites/sColFire/sColFire.yy",},"LayerId":{"name":"354228e9-cf96-405f-b4f1-fb84102cd495","path":"sprites/sColFire/sColFire.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sColFire","path":"sprites/sColFire/sColFire.yy",},"resourceVersion":"1.0","name":"c2e600eb-089c-49dd-8268-d3fff4b41d13","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"2c715443-2385-4a6f-bde8-e53d843ccac0","path":"sprites/sRock/sRock.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"2c715443-2385-4a6f-bde8-e53d843ccac0","path":"sprites/sRock/sRock.yy",},"LayerId":{"name":"466d9581-464e-4964-8bea-99e27f388f7b","path":"sprites/sRock/sRock.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sRock","path":"sprites/sRock/sRock.yy",},"resourceVersion":"1.0","name":"2c715443-2385-4a6f-bde8-e53d843ccac0","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"sColFire","path":"sprites/sColFire/sColFire.yy",},
+    "spriteId": {"name":"sRock","path":"sprites/sRock/sRock.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"6dfac142-e863-4e59-8b92-e29b8b9ec6d6","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"c2e600eb-089c-49dd-8268-d3fff4b41d13","path":"sprites/sColFire/sColFire.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"5c10e593-9a86-4390-8159-704da746b30b","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"2c715443-2385-4a6f-bde8-e53d843ccac0","path":"sprites/sRock/sRock.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
@@ -58,14 +58,14 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"sColFire","path":"sprites/sColFire/sColFire.yy",},
+    "parent": {"name":"sRock","path":"sprites/sRock/sRock.yy",},
     "resourceVersion": "1.3",
-    "name": "sColFire",
+    "name": "sRock",
     "tags": [],
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"354228e9-cf96-405f-b4f1-fb84102cd495","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"466d9581-464e-4964-8bea-99e27f388f7b","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {
@@ -73,7 +73,7 @@
     "path": "folders/Sprites.yy",
   },
   "resourceVersion": "1.0",
-  "name": "sColFire",
+  "name": "sRock",
   "tags": [],
   "resourceType": "GMSprite",
 }

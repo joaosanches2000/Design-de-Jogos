@@ -10,6 +10,7 @@ function EntityPlayAnimation(){
 
 	if (localFrame >= _totalFrames){
 		entityAnimationEnd = true;
+		audio_play_sound(Pot_break,1,false);
 	}
 	else entityAnimationEnd= false;
 

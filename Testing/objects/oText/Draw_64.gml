@@ -9,3 +9,6 @@ var _print = string_copy(message,1,textProgress);
 draw_text((x1+x2)/4, y1+65, _print);
 draw_set_color(c_white);
 draw_text((x1+x2)/4, y1+65, _print);
+draw_set_font(fAmmo);
+draw_set_color(c_black);
+draw_text((x1+x2)/4, y1+20, "Press enter to continue");

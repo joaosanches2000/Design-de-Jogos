@@ -47,7 +47,7 @@ if(global.playerHasAnyItems){
 	}
 }
 
-if (global.gamePaused){
+if (global.gamePaused || global.control){
 	draw_set_color(c_black);
 	draw_set_alpha(0.75);
 	draw_rectangle(0,0,RESOLUTION_W,RESOLUTION_H,false);
@@ -60,16 +60,34 @@ if (global.gamePaused){
 	with(Player){
 		if(state==PlayerStateDead){
 			draw_text(RESOLUTION_W * 0.5, RESOLUTION_H * 0.5 - 30, "GAME OVER");
-			oUI.pauseOption = oUI.gameOverOption;
+			oUI.pauseOption = ["Restart", "Quit"];
 		} 
 		else if(global.gameEnd)
 		{
 			draw_text(RESOLUTION_W * 0.5, RESOLUTION_H * 0.5 - 60, "YOUR FREE TRIAL HAS ENDED.\n BUY THE GAME FOR THE FULL EXPERIENCE.\n ONLY LXIX , XCIX");
-			oUI.pauseOption = oUI.gameOverOption;
+			oUI.pauseOption = ["Restart", "Quit"];
 		//	global.gameEnd = false;
+		} else if(global.control){
+			draw_text(RESOLUTION_W * 0.5, RESOLUTION_H * 0.5-120, "CONTROLS");
+			draw_set_font(fMenuSmool);
+			draw_set_color(c_ltgrey);
+			draw_text(RESOLUTION_W * 0.5, RESOLUTION_H* 0.5-80, "Next Masks Item 0 E Key");
+			draw_text(RESOLUTION_W * 0.5, RESOLUTION_H* 0.5-60, "Zeus Lightnings 0 Left Mouse Click");
+			draw_text(RESOLUTION_W * 0.5, RESOLUTION_H* 0.5-40, "Hermes Dodge 0 Space Key");
+			draw_text(RESOLUTION_W * 0.5, RESOLUTION_H* 0.5-20, "Dionysio Wine Making 0 Space Key");
+			draw_text(RESOLUTION_W * 0.5, RESOLUTION_H* 0.5, "Hit 0 F Key");
+			draw_text(RESOLUTION_W * 0.5, RESOLUTION_H * 0.5+20, "Special Hit 0 Shift Key");
+			draw_text(RESOLUTION_W * 0.5, RESOLUTION_H * 0.5+40, "Up Walk 0 W key or Up key");
+			draw_text(RESOLUTION_W * 0.5, RESOLUTION_H * 0.5+60, "Down Walk 0 S key or Down key");
+			draw_text(RESOLUTION_W * 0.5, RESOLUTION_H * 0.5+80, "Left Walk 0 A key or Left key");
+			draw_text(RESOLUTION_W * 0.5, RESOLUTION_H * 0.5+100, "Right Walk 0 D key or Right key");
+			draw_set_font(fMenu);
+			draw_set_color(c_white);
+			oUI.pauseOption=["Back"];
 		}
 		else {
 			draw_text(RESOLUTION_W * 0.5, RESOLUTION_H * 0.5 - 30, "GAME PAUSED");
+			oUI.pauseOption=["Resume", "Restart", "Controls", "Quit"];
 		}
 		
 	}
@@ -82,7 +100,12 @@ if (global.gamePaused){
 				_print += pauseOption[i];
 				draw_set_alpha(0.7);
 			}
-			draw_text(RESOLUTION_W * 0.5, RESOLUTION_H * 0.5 + 18 +(i*40), _print);
+			if(global.control){
+				draw_text(RESOLUTION_W * 0.5, RESOLUTION_H * 0.5 + 140, _print);
+			} else {
+				draw_text(RESOLUTION_W * 0.5, RESOLUTION_H * 0.5 + 18 +(i*40), _print);
+			}
+			
 			draw_set_alpha(1.0);
 		}
 	
