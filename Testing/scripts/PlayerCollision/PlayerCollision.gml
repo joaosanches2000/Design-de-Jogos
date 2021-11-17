@@ -83,6 +83,13 @@ function PlayerCollision() {
 				_snapY = y;
 				
 				
+			with(oMaskUnlock){
+				if(entityIsMask){
+					global.playerHasAnyItems=true;
+					global.playerItemUnlocked[ITEM.DYN]=true;
+						instance_destroy(); 
+				} 
+			 }
 			y = _snapY;
 			vSpeed = 0;
 			_collision = true;

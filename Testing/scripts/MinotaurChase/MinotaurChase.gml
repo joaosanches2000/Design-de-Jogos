@@ -31,15 +31,13 @@ function MinotaurChase(){
 	
 	//Check for attack range
 
-	if(instance_exists(target) && point_distance(x,y,target.x,target.y) <= enemyAttackRadius)
-	{
-		state = ENEMYSTATE.ATTACK;
-		sprite_index = sprAttack;
+	if(instance_exists(target) && point_distance(x,y,target.x,target.y) <= enemyAttackRadius){
+	
 		image_index = 0;
-		image_speed = 1.0;
-		//Target 8px past the player
-		xTo +=  lengthdir_x(0,dir);
-		yTo +=  lengthdir_y(0,dir);
+	
+		stateTarget =  ENEMYSTATE.ATTACK;
+		stateWaitDuration = 15;
+		state = ENEMYSTATE.WAIT;
 
 	}
 	
