@@ -170,14 +170,35 @@ function HurtEnemy(_enemy,_damage,_source, _knockback)
 
 
 function CalculateGun(argument0){
+	collisionMap = layer_tilemap_get_id(layer_get_id("Collision"));
 	mask_index = argument0;
+	for (j=0;j<1000;j++){
 	var hitByAttackNow = ds_list_create(); //list of enemies hit by attack this frame
-	var hits = instance_place_list(mouse_x,mouse_y,Entity,hitByAttackNow,false); //if true list is ordered
+	angulo = arctan((y-mouse_y)/(x-mouse_x));
+	var hits = instance_place_list(x + lengthdir_x(j, Gun.image_angle),y + lengthdir_y(j, Gun.image_angle),Entity,hitByAttackNow,false); //if true list is ordered
+	
+	if(tilemap_get_at_pixel(collisionMap, x + lengthdir_x(j, Gun.image_angle), y + lengthdir_y(j, Gun.image_angle)) || 
+	(tilemap_get_at_pixel(collisionMap, x + lengthdir_x(j, Gun.image_angle) + TILE_SIZE, y + lengthdir_y(j, Gun.image_angle))))
+	{
+		if(!object_is_ancestor(object_index,Enemy))
+		return;
+	}
+
+
+	if(tilemap_get_at_pixel(collisionMap, x + lengthdir_x(j, Gun.image_angle), y + lengthdir_y(j, Gun.image_angle)) ||
+	(tilemap_get_at_pixel(collisionMap, x + lengthdir_x(j, Gun.image_angle), y + lengthdir_y(j, Gun.image_angle) + TILE_SIZE)))
+	{
+		if(!object_is_ancestor(object_index,Enemy))
+		return;
+	}
+	
+	
+	
+	
 	if(hits > 0)
 	{		
 		for(var i = 0; i < hits; i++)
 		{
-			//hit instance
 			var hitID = hitByAttackNow[| i];
 			if(ds_list_find_index(hitByAttack,hitID) == -1) //if instance is not in attack list
 			{
@@ -200,5 +221,6 @@ function CalculateGun(argument0){
 	ds_list_destroy(hitByAttackNow);
 	mask_index = Player;
 	}
+}
 
 
