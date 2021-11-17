@@ -52,7 +52,8 @@ if(!global.gamePaused)
 						if(entityIsMagicPot)
 						{
 							instance_create_depth(x,y,depth,oMaskUnlock)
-							NewTextBox("pillinha", 0);
+							NewTextBox("Great, you found it!", 0);
+							NewTextBox("I wonder how to use its powers...", 0);
 						}
 						instance_destroy();
 						

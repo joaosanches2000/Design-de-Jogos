@@ -84,6 +84,9 @@ function EnemyTileCollision(){
 				_snapY = y;
 				
 				
+			if(_entityCheck.entityIsWinePot){
+				wineCollision = true;
+			}
 			y = _snapY;
 			vSpeed = 0;
 			_collision = true;

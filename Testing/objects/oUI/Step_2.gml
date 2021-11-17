@@ -10,7 +10,7 @@ if (global.gamePaused){
 	keyActivate = keyboard_check_pressed(vk_enter);
 	if(keyActivate){
 		with(Player){
-			if(state==PlayerStateDead){
+			if(state==PlayerStateDead || global.gameEnd){
 				switch(oUI.pauseOptionSelected){
 					case 0: //Restart
 					{

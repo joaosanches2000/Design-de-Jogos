@@ -61,7 +61,14 @@ if (global.gamePaused){
 		if(state==PlayerStateDead){
 			draw_text(RESOLUTION_W * 0.5, RESOLUTION_H * 0.5 - 30, "GAME OVER");
 			oUI.pauseOption = oUI.gameOverOption;
-		} else {
+		} 
+		else if(global.gameEnd)
+		{
+			draw_text(RESOLUTION_W * 0.5, RESOLUTION_H * 0.5 - 60, "YOUR FREE TRIAL HAS ENDED.\n BUY THE GAME FOR THE FULL EXPERIENCE.\n ONLY LXIX , XCIX");
+			oUI.pauseOption = oUI.gameOverOption;
+		//	global.gameEnd = false;
+		}
+		else {
 			draw_text(RESOLUTION_W * 0.5, RESOLUTION_H * 0.5 - 30, "GAME PAUSED");
 		}
 		

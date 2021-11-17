@@ -28,7 +28,9 @@ global.playerItemUnlocked[ITEM.ZEUS]=true;
 global.playerItemUnlocked[ITEM.DYN]=false;
 global.playerItemUnlocked[ITEM.HERMES]=true;
 
+global.gameEnd = false;
 
+global.firstVinePickUp = true;
 surface_resize(application_surface, RESOLUTION_W, RESOLUTION_H);
 room_goto(ROOM_START);
 

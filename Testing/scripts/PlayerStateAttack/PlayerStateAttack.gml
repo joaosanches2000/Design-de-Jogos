@@ -69,10 +69,10 @@ function AttackSlash(){
 
 
 function AttackGun(){
-	if(sprite_index != sPlayerAttackSlash || sprite_index != s360Slash) 
+	if(sprite_index != sPlayerThunderAttack) 
 	{
 		//Animation set-up
-		sprite_index = sPlayerAttackSlash;
+		sprite_index = sPlayerThunderAttack;
 		
 		//localFrame = 0;
 		image_index = 0;

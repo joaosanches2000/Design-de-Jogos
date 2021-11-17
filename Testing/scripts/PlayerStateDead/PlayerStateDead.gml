@@ -14,7 +14,6 @@ function PlayerStateDead(){
 	show_debug_message(floor(image_index));
 	show_debug_message(image_number-1);
 	if (floor(image_index) >= 7){
-		show_debug_message("ENTREI");
 		global.Morreu=true;
 	}
 }
