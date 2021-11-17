@@ -8,12 +8,14 @@ state = ENEMYSTATE.IDLE;
 
 
 //TODO: Enemy Sprites
-sprDie = sMinotaurDeath;
-sprAttack = sMinotaurAttack;
+sprDie = sGuardDie;
+sprAttack = sGuardAttack;
+sprIdle = sGuardIdle;
+
 //sprHurt
 //
 
 //Enemy Scripts
-enemyScript[ENEMYSTATE.ATTACK] = MinotaurAttack;
-enemyScript[ENEMYSTATE.IDLE] = MinotaurAttack;
-enemyScript[ENEMYSTATE.DIE] = MinotaurDie;
+enemyScript[ENEMYSTATE.ATTACK] = GuardAttack;
+enemyScript[ENEMYSTATE.IDLE] = GuardIdle;
+enemyScript[ENEMYSTATE.DIE] = GuardDie;

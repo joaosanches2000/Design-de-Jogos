@@ -2,10 +2,10 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function VinePickUp(arg1){
 	
-	if (global.iLifted == noone) {
+	if (global.iLifted == noone && global.playerEquipped == ITEM.DYN) {
 		entityCollision = false;
 		PlayerActOutAnimation(sPlayerLift);
-		var _instanceId = instance_create_depth(x,y-10,depth,Pot);
+		var _instanceId = instance_create_depth(x,y-10,depth,WinePot);
 		global.iLifted = _instanceId;
 		with (global.iLifted){
 			lifted = true;
