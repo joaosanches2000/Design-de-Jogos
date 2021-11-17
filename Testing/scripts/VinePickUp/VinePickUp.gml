@@ -7,8 +7,10 @@ function VinePickUp(arg1){
 		PlayerActOutAnimation(sPlayerLift);
 		var _instanceId = instance_create_depth(x,y-10,depth,Pot);
 		global.iLifted = _instanceId;
-		lifted = true;
-		persistent = true;
+		with (global.iLifted){
+			lifted = true;
+			persistent = true;
+		}
 		
 	}
 }

@@ -6,3 +6,5 @@ thrown = 0;
 lifted = 0;
 localFrame = 0;
 entityAnimationEnd = false;
+
+collisionMap = layer_tilemap_get_id(layer_get_id("Collision"));

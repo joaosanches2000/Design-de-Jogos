@@ -2,11 +2,11 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "Pick Up",
-    "path": "folders/Scripts/Pick Up.yy",
+    "name": "Guard",
+    "path": "folders/Scripts/Guard.yy",
   },
   "resourceVersion": "1.0",
-  "name": "VinePickUp",
+  "name": "GuardAttack",
   "tags": [],
   "resourceType": "GMScript",
 }
