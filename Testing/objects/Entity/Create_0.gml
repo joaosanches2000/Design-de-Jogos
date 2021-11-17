@@ -8,3 +8,6 @@ localFrame = 0;
 entityAnimationEnd = false;
 
 collisionMap = layer_tilemap_get_id(layer_get_id("Collision"));
+
+//for coll with vase
+wineCollision = false;

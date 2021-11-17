@@ -28,6 +28,7 @@ timePassed = 0;//in case there is wall in the way
 waitDuration = 60; // in frames
 wait = 0;
 
+isDead = false;
 
 
 //TODO: Enemy Sprites

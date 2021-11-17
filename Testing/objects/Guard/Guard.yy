@@ -27,7 +27,10 @@
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
-  "overriddenProperties": [],
+  "overriddenProperties": [
+    {"propertyId":{"name":"enemyAttackRadius","path":"objects/Enemy/Enemy.yy",},"objectId":{"name":"Enemy","path":"objects/Enemy/Enemy.yy",},"value":"20","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+    {"propertyId":{"name":"enemyHP","path":"objects/Enemy/Enemy.yy",},"objectId":{"name":"Enemy","path":"objects/Enemy/Enemy.yy",},"value":"999999999999","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+  ],
   "parent": {
     "name": "Objects",
     "path": "folders/Objects.yy",

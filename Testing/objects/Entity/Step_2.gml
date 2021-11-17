@@ -32,10 +32,8 @@ if(!global.gamePaused)
 			//z = y;
 			if(tilemap_get_at_pixel(collisionMap,x,y) > 0)
 			{
-				
 				grv = 0.1;
 				thrown = false;
-					
 			}
 
 			
