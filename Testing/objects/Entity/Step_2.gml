@@ -3,6 +3,23 @@
 //death
 if(!global.gamePaused)
 {	
+	
+	if(killOnAnimationEnd)
+	{
+		EntityPlayAnimation();
+		if(entityAnimationEnd) {
+			if(entityIsMagicPot)
+			{
+				
+				instance_create_depth(x,y,depth,oMaskUnlock);
+				NewTextBox("Great, you found it!", 0);
+				NewTextBox("I wonder how to use its powers...", 0);
+			}
+			entityAnimationEnd = false;
+			instance_destroy();
+			killOnAnimationEnd = true;
+		}
+	}
 	depth = -bbox_bottom;
 
 	if(lifted && instance_exists(Player))
@@ -29,9 +46,12 @@ if(!global.gamePaused)
 			throwDistanceTravelled = min(throwDistanceTravelled+3,throwDistance);
 			x = xstart + lengthdir_x(throwDistanceTravelled,direction);
 			y = ystart + lengthdir_y(throwDistanceTravelled,direction);
-			//z = y;
 			if(tilemap_get_at_pixel(collisionMap,x,y) > 0)
 			{
+				
+				
+				x -=  lengthdir_x(10,point_direction(Player.x,Player.y,x,y));
+				y -=  lengthdir_y(10,point_direction(Player.x,Player.y,x,y));
 				grv = 0.1;
 				thrown = false;
 			}
@@ -76,17 +96,10 @@ if(!global.gamePaused)
 				grv += 0.1;
 				if(z==0 && entityThrowBreak)
 				{
-									//@Copyright Adriano Vaz
-				for(i=0; i<3;i++)	//isto funciona n sei pq, mas agr n tenho cabeça
-					EntityPlayAnimation();
-				//Fim de @Copyright lolitos
-				
-				if(entityAnimationEnd) {
-					entityAnimationEnd = false;
-					instance_destroy();
+					if(entityIsMagicPot){
+						killOnAnimationEnd = true;
+					}	
 				}
-					//aqui deviam estar cenas mas n tao lol
-				}	
 			}
 			else
 			{
@@ -96,5 +109,6 @@ if(!global.gamePaused)
 		}
 	}
 }
+
 flash = max(flash -0.04, 0);
 

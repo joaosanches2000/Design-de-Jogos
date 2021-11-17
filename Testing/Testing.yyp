@@ -12,7 +12,6 @@
     {"id":{"name":"Sprite15","path":"sprites/Sprite15/Sprite15.yy",},"order":3,},
     {"id":{"name":"oTextQueued","path":"objects/oTextQueued/oTextQueued.yy",},"order":9,},
     {"id":{"name":"GuardAttack","path":"scripts/GuardAttack/GuardAttack.yy",},"order":1,},
-    {"id":{"name":"WinePotLogic","path":"scripts/WinePotLogic/WinePotLogic.yy",},"order":15,},
     {"id":{"name":"sLeftStand","path":"sprites/sLeftStand/sLeftStand.yy",},"order":11,},
     {"id":{"name":"Vines","path":"objects/Vines/Vines.yy",},"order":15,},
     {"id":{"name":"Sprite1256","path":"sprites/Sprite1256/Sprite1256.yy",},"order":11,},

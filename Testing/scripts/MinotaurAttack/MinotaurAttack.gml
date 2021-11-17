@@ -5,6 +5,11 @@ function MinotaurAttack(){
 
 	//var _distanceToGo = point_distance(x,y,xTo,yTo);
 	
+		sprite_index = sprAttack;
+		image_speed = 1.0;
+		//Target 8px past the player
+		xTo +=  lengthdir_x(0,dir);
+		yTo +=  lengthdir_y(0,dir);
 	
 	//hSpeed = 0;
 	//EnemyTileCollision();
