@@ -91,6 +91,7 @@
     {"id":{"name":"Logo","path":"sprites/Logo/Logo.yy",},"order":12,},
     {"id":{"name":"sHermes","path":"sprites/sHermes/sHermes.yy",},"order":24,},
     {"id":{"name":"Cliff_samples","path":"sprites/Cliff_samples/Cliff_samples.yy",},"order":5,},
+    {"id":{"name":"EvilWarning","path":"objects/EvilWarning/EvilWarning.yy",},"order":19,},
     {"id":{"name":"sPPlate","path":"sprites/sPPlate/sPPlate.yy",},"order":29,},
     {"id":{"name":"rEnd","path":"rooms/rEnd/rEnd.yy",},"order":7,},
     {"id":{"name":"WinePot","path":"objects/WinePot/WinePot.yy",},"order":17,},

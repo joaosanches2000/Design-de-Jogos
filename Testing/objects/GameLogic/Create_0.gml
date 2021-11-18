@@ -1,7 +1,7 @@
 /// @description Init and globals
 
 randomize(); // changes the seed of the game
-
+global.warning = false;
 global.gamePaused = false;
 global.textSpeed = 0.75;
 global.iLifted = noone;
