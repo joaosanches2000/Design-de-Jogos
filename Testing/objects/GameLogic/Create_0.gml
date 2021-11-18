@@ -1,6 +1,9 @@
 /// @description Init and globals
 
 randomize(); // changes the seed of the game
+
+global.TriggerFall = false;
+
 global.warning = false;
 global.gamePaused = false;
 global.textSpeed = 0.75;
